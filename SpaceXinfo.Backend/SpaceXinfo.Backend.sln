@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6CB35230-4253-4A10-B46E-02FF8CA5EFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3B69E838-9EA6-4B9E-938A-2725CFC584F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B49B0FB3-72FD-48E3-B9F7-0EBC4558A691}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{792EB1AF-E716-426D-A8E3-C5CA235930E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceXinfo.Domain", "SpaceXinfo.Domain\SpaceXinfo.Domain.csproj", "{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.Application", "SpaceXinfo.Application\SpaceXinfo.Application.csproj", "{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.Persistence", "SpaceXinfo.Persistence\SpaceXinfo.Persistence.csproj", "{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.WebApi", "SpaceXinfo.WebApi\SpaceXinfo.WebApi.csproj", "{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412} = {6CB35230-4253-4A10-B46E-02FF8CA5EFDD}
+		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565} = {6CB35230-4253-4A10-B46E-02FF8CA5EFDD}
+		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A} = {3B69E838-9EA6-4B9E-938A-2725CFC584F7}
+		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6} = {B49B0FB3-72FD-48E3-B9F7-0EBC4558A691}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92C0152E-A39F-460D-A6D6-033331976180}
+	EndGlobalSection
+EndGlobal

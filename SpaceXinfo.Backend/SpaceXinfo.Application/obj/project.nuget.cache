@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1v1qkrNKebk8Fc9qAj24FcpW72R4dya2uLE14x96aKcSvgg7tyiEgPbzuMP86yHFUO5VFUMbLPHSVG1ERqFP8Q==",
+  "dgSpecHash": "zAhsVRGIyaVTlyBeXIj658KKIDQYFPClKwRb0Ex+4xjn3L03K38r2TZARmXU8I3+WQzBCUSbS2nEcGwA/Fl9CA==",
   "success": true,
   "projectFilePath": "D:\\Programming\\SpaceXinfo\\SpaceXinfo.Backend\\SpaceXinfo.Application\\SpaceXinfo.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m4rce\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",

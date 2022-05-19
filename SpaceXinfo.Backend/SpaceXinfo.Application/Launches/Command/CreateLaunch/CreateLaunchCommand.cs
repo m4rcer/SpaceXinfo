@@ -1,11 +1,11 @@
 ﻿using System;
+using MediatR;
 
-namespace SpaceXinfo.Domain
+namespace SpaceXinfo.Application.Launches.Command.CreateLaunch
 {
-    public class Launch
+    public class CreateLaunchCommand : IRequest<Guid>
     {
         public Guid UserId { get; set; }
-        public Guid Id { get; set; }
         public int FavouriteLaunchId { get; set; }
         public DateTime NotificationTime { get; set; }
     }

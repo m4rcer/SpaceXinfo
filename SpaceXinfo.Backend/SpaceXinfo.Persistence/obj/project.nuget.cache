@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YLTfZKDF+9+9vx7dhIazWIY8WgAMvBYMflHRofvTkRZ3c8+rcO7YqTwcnSt1YfUCRsx8SnCI8w1B21XsCSWj5Q==",
+  "dgSpecHash": "hHirIf1jWNiikHGt+x6GU5vjYYdd3AIivcEJQfSX5rzX/Flef985dL9PGkpL3vk9pPli68wwFfsXzlm+O+MN/Q==",
   "success": true,
   "projectFilePath": "D:\\Programming\\SpaceXinfo\\SpaceXinfo.Backend\\SpaceXinfo.Persistence\\SpaceXinfo.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m4rce\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.17\\microsoft.data.sqlite.core.5.0.17.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hHirIf1jWNiikHGt+x6GU5vjYYdd3AIivcEJQfSX5rzX/Flef985dL9PGkpL3vk9pPli68wwFfsXzlm+O+MN/Q==",
+  "dgSpecHash": "FhMKWN9o8F9tZxiwwfyvE9UheBkL4Wyh8Ysb67i0+mif4vq4pKrMg8O2iUeFganLc1IU6IO1MWWFHKkvC5MWNQ==",
   "success": true,
   "projectFilePath": "D:\\Programming\\SpaceXinfo\\SpaceXinfo.Backend\\SpaceXinfo.Persistence\\SpaceXinfo.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m4rce\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

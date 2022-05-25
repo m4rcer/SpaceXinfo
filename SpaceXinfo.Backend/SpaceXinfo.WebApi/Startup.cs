@@ -7,6 +7,7 @@ using SpaceXinfo.Application;
 using SpaceXinfo.Application.Common.Mappings;
 using SpaceXinfo.Application.Interfaces;
 using SpaceXinfo.Persistence;
+using SpaceXinfo.WebApi.Middleware;
 using System.Reflection;
 
 namespace SpaceXinfo.WebApi
@@ -48,6 +49,7 @@ namespace SpaceXinfo.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");

@@ -7,6 +7,7 @@ using SpaceXinfo.Application.Launches.Queries.GetLaunchList;
 using SpaceXinfo.WebApi.Models;
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SpaceXinfo.WebApi.Controllers
 {
@@ -18,6 +19,7 @@ namespace SpaceXinfo.WebApi.Controllers
         public LaunchController(IMapper mapper) => _mapper = mapper;
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<LaunchListVm>> GetAll()
         {
             var query = new GetLaunchListQuery
@@ -29,6 +31,7 @@ namespace SpaceXinfo.WebApi.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<LaunchListVm>> Get(Guid id)
         {
             var query = new GetLaunchDetailsQuery
@@ -41,6 +44,7 @@ namespace SpaceXinfo.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Guid>> Create([FromBody] CreateLaunchDto createLaunchDto)
         {
             var command = _mapper.Map<CreateLaunchCommand>(createLaunchDto);
@@ -50,6 +54,7 @@ namespace SpaceXinfo.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> Delete(Guid id)
         {
             var command = new DeleteLaunchCommand

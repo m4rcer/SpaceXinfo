@@ -9,6 +9,7 @@ using SpaceXinfo.Application.Interfaces;
 using SpaceXinfo.Persistence;
 using SpaceXinfo.WebApi.Middleware;
 using System.Reflection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace SpaceXinfo.WebApi
 {
@@ -39,6 +40,20 @@ namespace SpaceXinfo.WebApi
                     policy.AllowAnyOrigin();
                 });
             });
+
+            services.AddAuthentication(config =>
+            {
+                config.DefaultAuthenticateScheme =
+                    JwtBearerDefaults.AuthenticationScheme;
+                config.DefaultChallengeScheme =
+                    JwtBearerDefaults.AuthenticationScheme;
+            })
+                .AddJwtBearer("Bearer", options =>
+                {
+                    options.Authority = "https://localhost:44316/";
+                    options.Audience = "SpaceXinfoWebAPI";
+                    options.RequireHttpsMetadata = false;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +68,8 @@ namespace SpaceXinfo.WebApi
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
-
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

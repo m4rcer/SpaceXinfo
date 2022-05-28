@@ -58,3 +58,12 @@ D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\ref\SpaceXinfo.WebApi.dll
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\SpaceXinfo.WebApi.pdb
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\SpaceXinfo.WebApi.genruntimeconfig.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\FluentValidation.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

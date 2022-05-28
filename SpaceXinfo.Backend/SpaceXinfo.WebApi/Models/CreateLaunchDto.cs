@@ -2,11 +2,13 @@
 using SpaceXinfo.Application.Common.Mappings;
 using SpaceXinfo.Application.Launches.Command.CreateLaunch;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace SpaceXinfo.WebApi.Models
 {
     public class CreateLaunchDto : IMapWith<CreateLaunchCommand>
     {
+        [Required]
         public int FavouriteLaunchId { get; set; }
         public DateTime NotificationTime { get; set; }
 

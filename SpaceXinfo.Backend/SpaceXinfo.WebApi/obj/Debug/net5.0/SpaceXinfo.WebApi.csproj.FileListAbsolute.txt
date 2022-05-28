@@ -67,3 +67,10 @@ D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\SpaceXinfo.WebApi.xml
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\SpaceXinfo.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\SpaceXinfo.WebApi.xml

@@ -10,6 +10,8 @@ using SpaceXinfo.Persistence;
 using SpaceXinfo.WebApi.Middleware;
 using System.Reflection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.IO;
+using System;
 
 namespace SpaceXinfo.WebApi
 {
@@ -54,6 +56,13 @@ namespace SpaceXinfo.WebApi
                     options.Audience = "SpaceXinfoWebAPI";
                     options.RequireHttpsMetadata = false;
                 });
+
+            services.AddSwaggerGen(config =>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                config.IncludeXmlComments(xmlPath);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -63,6 +72,12 @@ namespace SpaceXinfo.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.RoutePrefix = string.Empty;
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "SpaceXinfo API");
+            });
             app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();

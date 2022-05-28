@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "alhwGiWLraY/yiDMyepyKnRvjseguCBZFRywt4+jeC/63APTfJqDuYE+aeYzfcBPcW7ZdVuTP7CQlBbrInWd0A==",
+  "dgSpecHash": "eWAB354YLndeO2ZJPx8eT1PGVMUGCRwqv879B7fyeDnJpQ3Vzh0INHiQuZg/PC2fuqSc532f5OJ4mF8uWXJcPA==",
   "success": true,
   "projectFilePath": "D:\\Programming\\SpaceXinfo\\SpaceXinfo.Backend\\SpaceXinfo.WebApi\\SpaceXinfo.WebApi.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\m4rce\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.17\\microsoft.aspnetcore.authentication.jwtbearer.5.0.17.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.17\\microsoft.data.sqlite.core.5.0.17.nupkg.sha512",
     "C:\\Users\\m4rce\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

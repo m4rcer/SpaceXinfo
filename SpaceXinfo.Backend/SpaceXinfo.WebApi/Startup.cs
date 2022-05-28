@@ -12,6 +12,11 @@ using System.Reflection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.IO;
 using System;
+using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.OpenApi.Models;
 
 namespace SpaceXinfo.WebApi
 {
@@ -62,6 +67,31 @@ namespace SpaceXinfo.WebApi
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 config.IncludeXmlComments(xmlPath);
+                config.AddSecurityDefinition($"AuthToken",
+                   new OpenApiSecurityScheme
+                   {
+                       In = ParameterLocation.Header,
+                       Type = SecuritySchemeType.Http,
+                       BearerFormat = "JWT",
+                       Scheme = "bearer",
+                       Name = "Authorization",
+                       Description = "Authorization token"
+                   });
+
+                config.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = $"AuthToken"
+                            }
+                        },
+                        new string[] { }
+                    }
+                });
             });
         }
 

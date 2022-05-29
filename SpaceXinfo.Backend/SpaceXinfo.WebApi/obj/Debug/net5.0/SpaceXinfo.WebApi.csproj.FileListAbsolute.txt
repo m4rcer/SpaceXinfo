@@ -76,3 +76,12 @@ D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\obj\Debug\net5.0\SpaceXinfo.WebApi.xml
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.AspNetCore.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi\bin\Debug\net5.0\Serilog.Sinks.File.dll

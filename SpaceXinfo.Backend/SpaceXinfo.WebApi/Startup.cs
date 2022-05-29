@@ -17,6 +17,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.OpenApi.Models;
+using SpaceXinfo.WebApi.Services;
 
 namespace SpaceXinfo.WebApi
 {
@@ -93,6 +94,9 @@ namespace SpaceXinfo.WebApi
                     }
                 });
             });
+
+            services.AddSingleton<ICurrentUserService, CurrentUserService>();
+            services.AddHttpContextAccessor();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

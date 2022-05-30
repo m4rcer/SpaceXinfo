@@ -28,3 +28,20 @@ SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NO
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2022-05-29 14:33:16.513 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
 2022-05-29 14:33:16.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 351.6145ms
+2022-05-29 14:34:56.629 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-29 14:34:57.213 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-29 14:34:57.387 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-29 14:34:58.308 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-29 14:34:58.308 +03:00 [INF] Hosting environment: Development
+2022-05-29 14:34:58.309 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-29 14:34:58.534 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-29 14:34:59.735 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 1211.3233ms
+2022-05-29 14:35:05.131 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-29 14:35:05.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 516.9599ms
+2022-05-29 14:35:13.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-29 14:35:13.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.1134ms
+2022-05-29 14:35:16.114 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/favicon.ico - -
+2022-05-29 14:35:16.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/favicon.ico - - - 404 - - 430.1730ms
+2022-05-29 14:36:17.069 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-29 14:36:17.101 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 31.8844ms

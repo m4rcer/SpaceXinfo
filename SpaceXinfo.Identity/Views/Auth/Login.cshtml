@@ -1,23 +1,44 @@
 ﻿@model LoginViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link href=@Url.Content("~/styles/app.css") rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=@Url.Content("~/styles/app.css")>
+    <title>Sign In</title>
 </head>
-<form asp-action="Login" asp-controller="Auth" method="post">
-    <input type="hidden" asp-for="ReturnUrl" />
-    <div class="header">Login</div>
-    <div class="block">
-        <label>Username</label>
-        <input asp-for="Username" class="input" />
-        <span asp-validation-for="Username"></span>
-    </div>
-    <div class="block">
-        <label>Password</label>
-        <input asp-for="Password" class="input" />
-        <span asp-validation-for="Password"></span>
-    </div>
-    <div>
-        <button type="submit" class="button">Sign In</button>
-    </div>
-    <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl"
-       class="switch-button">Register</a>
-</form>
+<body>
+    <main>
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <form asp-action="Login" asp-controller="Auth" method="post">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <h1 class="form-title">
+                    Sign In
+                </h1>
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" placeholder="Nickname" required asp-for="Username">
+                        <span asp-validation-for="Username"></span>
+                    </div>
+                    <div class="form-field">
+                        <input asp-for="Password" type="password" placeholder="Password" required minlength="8" maxlength="24">
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button" type="submit">Sign In</button>
+                    <div class="divider">or</div>
+                    <a class="button button-bottom"
+                       asp-controller="Auth" asp-action="Register"
+                       asp-route-returnUrl="@Model.ReturnUrl">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

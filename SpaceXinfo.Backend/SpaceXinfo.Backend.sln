@@ -13,11 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{792EB1AF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceXinfo.Domain", "SpaceXinfo.Domain\SpaceXinfo.Domain.csproj", "{3629DEDD-1F8F-46D0-AE1C-26D1CB13D412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.Application", "SpaceXinfo.Application\SpaceXinfo.Application.csproj", "{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceXinfo.Application", "SpaceXinfo.Application\SpaceXinfo.Application.csproj", "{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.Persistence", "SpaceXinfo.Persistence\SpaceXinfo.Persistence.csproj", "{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceXinfo.Persistence", "SpaceXinfo.Persistence\SpaceXinfo.Persistence.csproj", "{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.WebApi", "SpaceXinfo.WebApi\SpaceXinfo.WebApi.csproj", "{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceXinfo.WebApi", "SpaceXinfo.WebApi\SpaceXinfo.WebApi.csproj", "{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceXinfo.Tests", "SpaceXinfo.Tests\SpaceXinfo.Tests.csproj", "{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{DEAFDA3D-6FD1-4D91-AE41-80CD285C7565} = {6CB35230-4253-4A10-B46E-02FF8CA5EFDD}
 		{6B8C99FE-4DE0-4CB5-B4BE-D2337638AF6A} = {3B69E838-9EA6-4B9E-938A-2725CFC584F7}
 		{4B52A497-61F9-4C0E-AF1D-DD2B3A6057E6} = {B49B0FB3-72FD-48E3-B9F7-0EBC4558A691}
+		{5DD06BCB-CB5B-43FF-AE61-0B5C9E144CA8} = {792EB1AF-E716-426D-A8E3-C5CA235930E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C0152E-A39F-460D-A6D6-033331976180}

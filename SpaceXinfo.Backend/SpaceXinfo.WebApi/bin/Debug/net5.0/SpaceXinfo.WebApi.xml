@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpaceXinfo.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:SpaceXinfo.WebApi.Controllers.LaunchController.GetAll">
+            <summary>
+            Gets the list of launches
+            </summary>
+            <remarks>
+            Sample request:
+            Get /launch
+            </remarks>
+            <returns>Returns LaunchListVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+        <member name="M:SpaceXinfo.WebApi.Controllers.LaunchController.Get(System.Guid)">
+            <summary>
+            Gets the launch by id
+            </summary>
+            <remarks>
+            Sample request:
+            Get /launch/16B73435-AB06-4A5B-974C-33DBF5448DB0
+            </remarks>
+            <param name="id">Launch id (guid)</param>
+            <returns>Returns LaunchDetailsVm</returns>
+            <response code="200">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+        <member name="M:SpaceXinfo.WebApi.Controllers.LaunchController.Create(SpaceXinfo.WebApi.Models.CreateLaunchDto)">
+            <summary>
+            Creates the launch
+            </summary>
+            <remarks>
+            Sample request:
+            Post /launch
+            {
+                FavouriteLaunchId = 2,
+                NotificationTime = 2022-05-29T10:00:00
+            }
+            </remarks>
+            <param name="createLaunchDto">CreateLaunchDto object</param>
+            <returns>Returns id (guid)</returns>
+            <response code="201">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+        <member name="M:SpaceXinfo.WebApi.Controllers.LaunchController.Delete(System.Guid)">
+            <summary>
+            Deletes the launch
+            </summary>
+            <remarks>
+            Sample request:
+            Delete /launch/16B73435-AB06-4A5B-974C-33DBF5448DB0
+            </remarks>
+            <param name="id">Id of launch (guid)</param>
+            <returns>Returns NoContent</returns>
+            <response code="204">Success</response>
+            <response code="401">If the user is unauthorized</response>
+        </member>
+    </members>
+</doc>

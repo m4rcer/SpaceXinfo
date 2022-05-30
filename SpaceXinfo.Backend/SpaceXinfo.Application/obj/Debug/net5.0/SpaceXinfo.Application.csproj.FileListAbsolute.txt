@@ -1,0 +1,15 @@
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.csproj.AssemblyReference.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.AssemblyInfoInputs.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.AssemblyInfo.cs
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.csproj.CoreCompileInputs.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\SpaceXinfo.Application.deps.json
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\SpaceXinfo.Application.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\ref\SpaceXinfo.Application.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\SpaceXinfo.Application.pdb
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\SpaceXinfo.Domain.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\bin\Debug\net5.0\SpaceXinfo.Domain.pdb
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.csproj.CopyComplete
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\ref\SpaceXinfo.Application.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Application\obj\Debug\net5.0\SpaceXinfo.Application.pdb

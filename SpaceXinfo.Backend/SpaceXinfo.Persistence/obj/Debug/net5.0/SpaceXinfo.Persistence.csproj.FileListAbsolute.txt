@@ -1,0 +1,17 @@
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.csproj.AssemblyReference.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.AssemblyInfoInputs.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.AssemblyInfo.cs
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.csproj.CoreCompileInputs.cache
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Persistence.deps.json
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Persistence.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\ref\SpaceXinfo.Persistence.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Persistence.pdb
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Application.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Domain.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Application.pdb
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\bin\Debug\net5.0\SpaceXinfo.Domain.pdb
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.csproj.CopyComplete
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\ref\SpaceXinfo.Persistence.dll
+D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.Persistence\obj\Debug\net5.0\SpaceXinfo.Persistence.pdb

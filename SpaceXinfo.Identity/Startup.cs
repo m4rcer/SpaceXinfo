@@ -29,10 +29,12 @@ namespace SpaceXinfo.Identity
 
             services.AddIdentity<IdentityUser, IdentityRole>(config =>
             {
-                config.Password.RequiredLength = 8;
+                config.Password.RequiredLength = 6;
                 config.Password.RequireDigit = false;
                 config.Password.RequireNonAlphanumeric = false;
                 config.Password.RequireUppercase = false;
+                config.Password.RequireLowercase = false;
+                config.Password.RequiredUniqueChars = 0;
             })
                 .AddEntityFrameworkStores<AuthDbContext>()
                 .AddDefaultTokenProviders();

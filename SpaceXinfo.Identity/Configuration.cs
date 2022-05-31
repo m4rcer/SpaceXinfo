@@ -35,28 +35,28 @@ namespace SpaceXinfo.Identity
             {
                 new Client
                 {
-                    ClientId = "launches-web-api",
-                    ClientName = "Launches Web",
+                    ClientId = "spacexinfo-web-app",
+                    ClientName = "SpaceXinfo Web",
                     AllowedGrantTypes = GrantTypes.Code,
                     RequireClientSecret = false,
                     RequirePkce = true,
                     RedirectUris =
                     {
-                        "http://.../signin-oidc"
+                        "http://localhost:3000/signin-oidc"
                     },
                     AllowedCorsOrigins =
                     {
-                        "http://..."
+                        "http://localhost:3000"
                     },
                     PostLogoutRedirectUris =
                     {
-                        "http://.../signout-oidc"
+                        "http://localhost:3000/signout-oidc"
                     },
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "LaunchesWebAPI"
+                        "SpaceXinfoWebAPI"
                     },
                     AllowAccessTokensViaBrowser = true
                 }

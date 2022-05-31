@@ -1,0 +1,186 @@
+2022-05-30 16:57:42.456 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-30 16:57:46.024 +03:00 [INF] Executed DbCommand (868ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-30 16:57:49.474 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 16:57:52.238 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 16:57:52.239 +03:00 [INF] Hosting environment: Development
+2022-05-30 16:57:52.240 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-30 16:57:53.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2022-05-30 16:57:55.354 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 301 - - 1752.3067ms
+2022-05-30 16:57:55.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-30 16:57:56.982 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 1526.6677ms
+2022-05-30 16:58:45.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - -
+2022-05-30 16:58:45.176 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - -
+2022-05-30 16:58:45.177 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui.css - -
+2022-05-30 16:58:45.553 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-30 16:58:45.553 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-30 16:58:45.566 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-30 16:58:45.568 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui.css - - - 200 143943 text/css 409.8472ms
+2022-05-30 16:58:45.591 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 431.9684ms
+2022-05-30 16:58:45.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - - - 200 1095087 application/javascript 458.9693ms
+2022-05-30 16:58:48.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/favicon-32x32.png - -
+2022-05-30 16:58:48.462 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-05-30 16:58:48.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/favicon-32x32.png - - - 200 628 image/png 8.8103ms
+2022-05-30 16:58:49.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-30 16:58:49.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 532.8389ms
+2022-05-30 17:02:38.647 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:54813/api/Launch - -
+2022-05-30 17:02:38.647 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:54813/api/Launch - -
+2022-05-30 17:02:39.240 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:54813/api/Launch - - - 307 - - 618.1143ms
+2022-05-30 17:02:39.241 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:54813/api/Launch - - - 307 - - 622.5764ms
+2022-05-30 17:14:13.334 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-30 17:14:14.899 +03:00 [INF] Executed DbCommand (327ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-30 17:14:15.281 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-30 17:14:17.133 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 17:14:17.133 +03:00 [INF] Hosting environment: Development
+2022-05-30 17:14:17.133 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-30 17:14:17.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-30 17:14:18.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 1231.4385ms
+2022-05-30 17:14:27.528 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:14:27.530 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:14:27.725 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:14:27.725 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:14:27.731 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 203.1526ms
+2022-05-30 17:14:27.733 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 204.6505ms
+2022-05-30 17:14:27.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:14:27.750 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:14:28.162 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 414.9612ms
+2022-05-30 17:14:28.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:14:28.172 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:14:28.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 71.4018ms
+2022-05-30 17:14:42.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-30 17:14:43.912 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 925.7275ms
+2022-05-30 17:15:24.789 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:15:24.789 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:15:24.791 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:15:24.803 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 12.9606ms
+2022-05-30 17:15:24.840 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:15:24.847 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 57.0898ms
+2022-05-30 17:17:58.432 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:17:58.441 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:17:58.443 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:17:58.444 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:17:58.449 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 21.8631ms
+2022-05-30 17:17:58.448 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 20.4022ms
+2022-05-30 17:17:58.472 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:17:58.499 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:17:58.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:17:58.562 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:17:58.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 31.3917ms
+2022-05-30 17:17:58.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 123.8172ms
+2022-05-30 17:18:07.783 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:18:07.783 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:18:07.788 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:18:07.788 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:18:07.789 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 5.9324ms
+2022-05-30 17:18:07.790 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 7.2488ms
+2022-05-30 17:18:07.805 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:18:07.805 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:18:07.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 11.7313ms
+2022-05-30 17:18:07.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:18:07.868 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:18:07.878 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 10.6508ms
+2022-05-30 17:19:17.827 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:19:17.829 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:19:17.830 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:17.830 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:17.839 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 22.4292ms
+2022-05-30 17:19:17.839 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 8.2833ms
+2022-05-30 17:19:17.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:19:17.850 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:17.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 11.1088ms
+2022-05-30 17:19:17.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:19:17.861 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:17.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 3.8347ms
+2022-05-30 17:19:48.666 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:19:48.667 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:19:48.681 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:48.681 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:48.681 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 14.6836ms
+2022-05-30 17:19:48.682 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 25.7291ms
+2022-05-30 17:19:48.698 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:19:48.699 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:48.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 16.7423ms
+2022-05-30 17:19:48.751 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:19:48.753 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:19:48.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 14.8062ms
+2022-05-30 17:20:13.506 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:20:13.506 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:20:13.506 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:20:13.506 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:20:13.506 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 0.7098ms
+2022-05-30 17:20:13.520 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 14.0747ms
+2022-05-30 17:20:13.543 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:20:13.544 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:20:13.548 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 4.8536ms
+2022-05-30 17:20:13.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:20:13.557 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:20:13.568 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 10.9819ms
+2022-05-30 17:21:07.723 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:21:07.723 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:07.734 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 10.7622ms
+2022-05-30 17:21:07.752 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382//api/Launch application/json 26
+2022-05-30 17:21:07.753 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:07.755 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382//api/Launch application/json 26 - 404 - - 3.2931ms
+2022-05-30 17:21:08.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:21:08.183 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:08.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 2.2765ms
+2022-05-30 17:21:50.800 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:21:50.801 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:50.801 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:21:50.801 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:50.805 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 4.6315ms
+2022-05-30 17:21:50.805 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 3.5509ms
+2022-05-30 17:21:50.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:21:50.854 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:50.869 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 15.8149ms
+2022-05-30 17:21:50.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:21:50.898 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:21:50.929 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 34.3950ms
+2022-05-30 17:23:11.862 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:23:11.894 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:11.902 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 57.0872ms
+2022-05-30 17:23:11.923 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:23:11.940 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:11.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 76.5823ms
+2022-05-30 17:23:27.294 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:23:27.298 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:23:27.302 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:27.302 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:27.303 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 12.7672ms
+2022-05-30 17:23:27.303 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 4.4600ms
+2022-05-30 17:23:27.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:23:27.319 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:27.327 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 8.6955ms
+2022-05-30 17:23:27.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:23:27.331 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:23:27.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 6.2473ms
+2022-05-30 17:24:23.201 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382//api/Launch - -
+2022-05-30 17:24:23.202 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:24:23.202 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382//api/Launch - - - 204 - - 1.9386ms
+2022-05-30 17:24:23.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:24:23.238 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:24:23.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 6.6779ms
+2022-05-30 17:24:25.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382//api/Launch - -
+2022-05-30 17:24:25.394 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:24:25.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382//api/Launch - - - 404 - - 18.9364ms
+2022-05-30 17:24:57.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-30 17:24:58.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 757.7029ms
+2022-05-30 17:25:16.031 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-30 17:25:16.031 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-30 17:25:16.083 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:25:16.083 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:25:16.084 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 53.2015ms
+2022-05-30 17:25:16.084 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 54.0127ms
+2022-05-30 17:25:16.825 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-30 17:25:16.829 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:25:16.982 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-30 17:25:17.016 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-30 17:25:17.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 215.2909ms
+2022-05-30 17:25:17.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-30 17:25:17.058 +03:00 [INF] CORS policy execution successful.
+2022-05-30 17:25:17.059 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-30 17:25:17.061 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-30 17:25:17.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 29.9445ms

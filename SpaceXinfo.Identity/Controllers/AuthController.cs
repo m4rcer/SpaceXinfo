@@ -95,7 +95,7 @@ namespace SpaceXinfo.Identity.Controllers
         {
             await _signInManager.SignOutAsync();
             var logoutRequest = await _interactionService.GetLogoutContextAsync(logoutId);
-            return Redirect(logoutRequest.PostLogoutRedirectUri);
+            return Redirect("http://localhost:3000/signout-oidc");
         }
     }
 }

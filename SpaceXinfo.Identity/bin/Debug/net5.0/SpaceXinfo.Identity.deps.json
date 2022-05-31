@@ -20,7 +20,7 @@
       "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "9.0",
-    "platform": "",
+    "platform": "AnyCPU",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,

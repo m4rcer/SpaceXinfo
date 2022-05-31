@@ -1,0 +1,1676 @@
+2022-05-31 10:38:13.923 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 10:38:17.668 +03:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-31 10:38:19.491 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 10:38:23.066 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 10:38:23.067 +03:00 [INF] Hosting environment: Development
+2022-05-31 10:38:23.069 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-31 10:38:23.280 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:38:23.280 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2022-05-31 10:38:23.280 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:38:23.716 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-31 10:38:23.724 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:38:23.724 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:38:23.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 301 - - 453.4664ms
+2022-05-31 10:38:23.732 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 462.6008ms
+2022-05-31 10:38:23.733 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 463.5641ms
+2022-05-31 10:38:23.835 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:38:23.837 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:38:24.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 773.4138ms
+2022-05-31 10:38:24.525 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:38:24.539 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:38:24.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 718.2440ms
+2022-05-31 10:38:24.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:38:24.816 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:38:24.822 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:38:24.822 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:38:24.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 31.8071ms
+2022-05-31 10:38:27.695 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui.css - -
+2022-05-31 10:38:27.709 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - -
+2022-05-31 10:38:27.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - -
+2022-05-31 10:38:28.092 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-05-31 10:38:28.092 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-05-31 10:38:28.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui.css - - - 200 143943 text/css 408.4285ms
+2022-05-31 10:38:28.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 273.4250ms
+2022-05-31 10:38:28.151 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-05-31 10:38:28.335 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - - - 200 1095087 application/javascript 626.5019ms
+2022-05-31 10:38:29.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/favicon-32x32.png - -
+2022-05-31 10:38:29.927 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-05-31 10:38:29.995 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/favicon-32x32.png - - - 200 628 image/png 74.7640ms
+2022-05-31 10:38:30.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-31 10:38:31.761 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1078.6532ms
+2022-05-31 10:39:33.300 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:39:33.311 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:39:33.327 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:39:33.329 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:39:33.331 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 33.9631ms
+2022-05-31 10:39:33.342 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 45.5845ms
+2022-05-31 10:39:33.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:39:33.374 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:39:33.392 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:39:33.393 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:39:33.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 41.0012ms
+2022-05-31 10:39:33.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:39:33.451 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:39:33.452 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:39:33.452 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:39:33.455 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 5.2629ms
+2022-05-31 10:43:08.525 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:43:08.590 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:08.602 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 86.7971ms
+2022-05-31 10:43:09.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:43:09.058 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:09.080 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:43:09.083 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:43:09.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 0 - - 39.6168ms
+2022-05-31 10:43:15.189 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:43:15.192 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:15.193 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 3.3645ms
+2022-05-31 10:43:15.195 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:43:15.195 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:15.199 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 5.0801ms
+2022-05-31 10:43:15.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:43:15.351 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:15.365 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:43:15.369 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:43:15.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 83.6997ms
+2022-05-31 10:43:15.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:43:15.433 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:43:15.433 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:43:15.434 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:43:15.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 4.3445ms
+2022-05-31 10:45:18.872 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:45:18.873 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:45:18.898 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:45:18.898 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:45:18.912 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 38.7703ms
+2022-05-31 10:45:18.912 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 37.3442ms
+2022-05-31 10:45:18.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:45:18.928 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:45:18.946 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:45:18.947 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:45:18.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 44.2092ms
+2022-05-31 10:45:18.969 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:45:18.970 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:45:18.971 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:45:18.971 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:45:18.977 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 7.9080ms
+2022-05-31 10:47:10.127 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:47:10.129 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:47:10.150 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 23.4030ms
+2022-05-31 10:47:10.183 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 10:47:10.187 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:47:10.189 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:47:10.190 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:47:10.193 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 401 - - 10.4130ms
+2022-05-31 10:47:10.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:47:10.596 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:47:10.597 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:47:10.598 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:47:10.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 7.1602ms
+2022-05-31 10:58:33.409 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 10:58:34.928 +03:00 [INF] Executed DbCommand (153ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-31 10:58:35.272 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 10:58:36.077 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 10:58:36.096 +03:00 [INF] Hosting environment: Development
+2022-05-31 10:58:36.096 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-31 10:58:36.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-31 10:58:36.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 509.3853ms
+2022-05-31 10:58:46.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-31 10:58:46.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 511.8044ms
+2022-05-31 10:59:49.960 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:59:50.011 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 10:59:50.238 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:59:50.239 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:59:50.250 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 309.6509ms
+2022-05-31 10:59:50.250 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 294.0978ms
+2022-05-31 10:59:50.337 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:59:50.344 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:59:50.985 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:59:50.997 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:59:51.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 685.3802ms
+2022-05-31 10:59:51.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 10:59:51.039 +03:00 [INF] CORS policy execution successful.
+2022-05-31 10:59:51.056 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 10:59:51.057 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 10:59:51.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 36.6939ms
+2022-05-31 11:26:53.872 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:26:55.223 +03:00 [INF] Executed DbCommand (453ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-31 11:26:56.000 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 11:26:59.915 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 11:26:59.916 +03:00 [INF] Hosting environment: Development
+2022-05-31 11:26:59.917 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-31 11:27:00.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-31 11:27:04.373 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 3750.7347ms
+2022-05-31 11:27:39.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-31 11:27:40.167 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 486.9712ms
+2022-05-31 11:31:57.739 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:31:57.738 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:31:58.004 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:31:58.004 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:31:58.016 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 282.3061ms
+2022-05-31 11:31:58.016 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 278.1681ms
+2022-05-31 11:31:58.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:31:58.050 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:31:58.405 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:31:58.419 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:31:58.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 388.3953ms
+2022-05-31 11:31:58.438 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:31:58.438 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:31:58.443 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:31:58.443 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:31:58.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 6.9292ms
+2022-05-31 11:33:27.619 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:33:27.619 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:33:27.620 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:33:27.620 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:33:27.620 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.8117ms
+2022-05-31 11:33:27.620 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0827ms
+2022-05-31 11:33:27.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:33:27.678 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:33:27.684 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:33:27.684 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:33:27.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:33:27.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 26.5196ms
+2022-05-31 11:33:27.705 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:33:27.705 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:33:27.705 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:33:27.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 10.4189ms
+2022-05-31 11:34:17.854 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:17.854 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:17.855 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:17.857 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:17.857 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 3.4557ms
+2022-05-31 11:34:17.876 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 22.1776ms
+2022-05-31 11:34:17.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:17.920 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:20.738 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:20.740 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:20.750 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 4.9756ms
+2022-05-31 11:34:20.831 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 11:34:20.831 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:21.540 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:21.540 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:21.549 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:21.549 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:21.556 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:21.556 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:34:21.693 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:21.700 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:22.553 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:22.762 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:22.933 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":75,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 11:34:23.106 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:24.159 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:24.175 +03:00 [INF] Executed DbCommand (69ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 11:34:24.252 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:24.331 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 2613.7761ms
+2022-05-31 11:34:24.363 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:24.403 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 6482.9518ms
+2022-05-31 11:34:24.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:24.475 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:24.476 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:24.477 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:24.477 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:24.478 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:24.479 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:24.480 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:24.496 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 11:34:24.502 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 2801.5843ms
+2022-05-31 11:34:24.509 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:34:24.516 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 200 - application/json;+charset=utf-8 3684.1881ms
+2022-05-31 11:34:24.544 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:24.639 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:24.656 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 178.3302ms
+2022-05-31 11:34:24.656 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:24.661 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 188.2927ms
+2022-05-31 11:34:24.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:24.745 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:24.750 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:24.751 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:24.751 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:24.751 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:24.756 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:24.844 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:25.398 +03:00 [INF] Executed DbCommand (549ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:25.625 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:25.653 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 901.2437ms
+2022-05-31 11:34:25.653 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:25.705 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 947.1686ms
+2022-05-31 11:34:29.241 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:29.241 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:29.242 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.9759ms
+2022-05-31 11:34:29.382 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 11:34:29.382 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:29.384 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:29.384 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:29.384 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:34:29.397 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:29.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:29.662 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:29.663 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:29.663 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:29.663 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:29.664 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:29.664 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:29.665 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:29.681 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":123,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 11:34:29.682 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:29.711 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 11:34:29.720 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:29.732 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:29.735 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 71.1315ms
+2022-05-31 11:34:29.735 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:29.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 77.8173ms
+2022-05-31 11:34:29.798 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 11:34:29.834 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 436.2976ms
+2022-05-31 11:34:29.836 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:34:29.839 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 200 - application/json;+charset=utf-8 457.2839ms
+2022-05-31 11:34:52.393 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:52.394 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:52.394 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0641ms
+2022-05-31 11:34:52.395 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:34:52.395 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:52.396 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.3262ms
+2022-05-31 11:34:52.467 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:52.467 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:52.469 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:52.469 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:52.469 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:52.470 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:52.470 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:52.472 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:52.489 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:52.495 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:52.498 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 27.5428ms
+2022-05-31 11:34:52.498 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:52.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 32.6884ms
+2022-05-31 11:34:52.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:34:52.597 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:34:52.598 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:34:52.598 +03:00 [INF] Authorization was successful.
+2022-05-31 11:34:52.598 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:52.599 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:34:52.599 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:34:52.604 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:34:52.662 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:34:52.668 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:34:52.669 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 70.4299ms
+2022-05-31 11:34:52.672 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:34:52.675 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 78.3832ms
+2022-05-31 11:36:27.216 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:36:27.216 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:36:27.217 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.6954ms
+2022-05-31 11:36:27.248 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 11:36:27.248 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:36:27.249 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:36:27.250 +03:00 [INF] Authorization was successful.
+2022-05-31 11:36:27.250 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:36:27.256 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:36:27.264 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":78,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 11:36:27.266 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:36:27.297 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 11:36:27.320 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 11:36:27.340 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 83.755ms
+2022-05-31 11:36:27.340 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:36:27.347 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 200 - application/json;+charset=utf-8 102.8052ms
+2022-05-31 11:36:27.673 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:36:27.673 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:36:27.675 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:36:27.675 +03:00 [INF] Authorization was successful.
+2022-05-31 11:36:27.675 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:36:27.676 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:36:27.676 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:36:27.677 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:36:27.693 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:36:27.700 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:36:27.727 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 51.7046ms
+2022-05-31 11:36:27.728 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:36:27.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 56.1991ms
+2022-05-31 11:37:06.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:37:06.335 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:06.336 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:06.336 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:06.336 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:06.337 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:37:06.351 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:06.381 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:37:06.407 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:37:06.412 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 75.4669ms
+2022-05-31 11:37:06.412 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:06.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 96.5946ms
+2022-05-31 11:37:29.917 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44382/api/Launch/42b0a479-fc0e-43b1-8e6b-60eaede7578b - -
+2022-05-31 11:37:29.970 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:29.993 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:29.994 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:29.994 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Delete (SpaceXinfo.WebApi)'
+2022-05-31 11:37:30.081 +03:00 [INF] Route matched with {action = "Delete", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:30.316 +03:00 [INF] SpaceXinfo Request: DeleteLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","Id":"42b0a479-fc0e-43b1-8e6b-60eaede7578b","$type":"DeleteLaunchCommand"}
+2022-05-31 11:37:30.333 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:30.703 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__get_Item_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."Id", "l"."FavouriteLaunchId", "l"."NotificationTime", "l"."UserId"
+FROM "Launches" AS "l"
+WHERE "l"."Id" = @__get_Item_0
+LIMIT 1
+2022-05-31 11:37:30.825 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?'], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Launches"
+WHERE "Id" = @p0;
+SELECT changes();
+2022-05-31 11:37:30.888 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-05-31 11:37:30.889 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Delete (SpaceXinfo.WebApi) in 807.9032ms
+2022-05-31 11:37:30.889 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Delete (SpaceXinfo.WebApi)'
+2022-05-31 11:37:30.891 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44382/api/Launch/42b0a479-fc0e-43b1-8e6b-60eaede7578b - - - 204 - - 973.6461ms
+2022-05-31 11:37:42.416 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:37:42.420 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:37:42.420 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:42.420 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:42.421 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 87.4832ms
+2022-05-31 11:37:42.421 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 4.1465ms
+2022-05-31 11:37:42.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:37:42.458 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:42.459 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:42.460 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:42.460 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:42.460 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:42.460 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:37:42.461 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:42.535 +03:00 [INF] Executed DbCommand (72ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:37:42.563 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:37:42.567 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 106.72ms
+2022-05-31 11:37:42.567 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:42.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 164.6715ms
+2022-05-31 11:37:42.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:37:42.738 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:42.739 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:42.740 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:42.740 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:42.740 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:42.741 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:37:42.742 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:42.833 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:37:42.861 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:37:42.897 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 156.4576ms
+2022-05-31 11:37:42.897 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:42.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 162.8106ms
+2022-05-31 11:37:51.904 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:37:51.905 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:51.908 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.1018ms
+2022-05-31 11:37:51.912 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 11:37:51.912 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:51.913 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:51.913 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:51.914 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:37:51.914 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:51.914 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":54,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 11:37:51.915 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:51.927 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 11:37:51.937 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 11:37:51.938 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 24.342ms
+2022-05-31 11:37:51.938 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:37:51.939 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 200 - application/json;+charset=utf-8 26.9911ms
+2022-05-31 11:37:52.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:37:52.404 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:52.405 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:52.405 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:52.405 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:52.405 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:52.405 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:37:52.406 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:52.414 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:37:52.417 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:37:52.417 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 12.1384ms
+2022-05-31 11:37:52.418 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:52.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 16.3249ms
+2022-05-31 11:37:54.374 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 23
+2022-05-31 11:37:54.374 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:54.375 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:54.375 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:54.375 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:37:54.375 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:54.376 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":1,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 11:37:54.377 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:54.388 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 11:37:54.401 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 11:37:54.403 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 27.689ms
+2022-05-31 11:37:54.404 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 11:37:54.405 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 23 - 200 - application/json;+charset=utf-8 30.7696ms
+2022-05-31 11:37:54.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:37:54.873 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:37:54.874 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:37:54.874 +03:00 [INF] Authorization was successful.
+2022-05-31 11:37:54.874 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:54.874 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:37:54.875 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:37:54.875 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:37:54.881 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:37:54.889 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:37:54.890 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 15.6264ms
+2022-05-31 11:37:54.890 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:37:54.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 18.7731ms
+2022-05-31 11:38:01.434 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:38:01.434 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:01.435 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.7235ms
+2022-05-31 11:38:01.437 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:38:01.437 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:01.438 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.6863ms
+2022-05-31 11:38:01.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:38:01.504 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:01.505 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:38:01.506 +03:00 [INF] Authorization was successful.
+2022-05-31 11:38:01.506 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:01.506 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:38:01.507 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:38:01.510 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:38:01.555 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:38:01.584 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:38:01.590 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 83.3469ms
+2022-05-31 11:38:01.590 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:01.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 91.4700ms
+2022-05-31 11:38:01.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:38:01.680 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:01.682 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:38:01.682 +03:00 [INF] Authorization was successful.
+2022-05-31 11:38:01.682 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:01.682 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:38:01.683 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:38:01.684 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:38:01.721 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:38:01.726 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:38:01.728 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 45.2421ms
+2022-05-31 11:38:01.728 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:01.739 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 62.5066ms
+2022-05-31 11:38:32.449 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:38:32.449 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:32.449 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:38:32.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.9422ms
+2022-05-31 11:38:32.450 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:32.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.9342ms
+2022-05-31 11:38:32.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:38:32.499 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:32.501 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:38:32.501 +03:00 [INF] Authorization was successful.
+2022-05-31 11:38:32.501 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:32.501 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:38:32.502 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:38:32.503 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:38:32.556 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:38:32.573 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:38:32.602 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 99.9667ms
+2022-05-31 11:38:32.602 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:32.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 107.6400ms
+2022-05-31 11:38:32.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:38:32.657 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:38:32.658 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:38:32.658 +03:00 [INF] Authorization was successful.
+2022-05-31 11:38:32.659 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:32.659 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:38:32.660 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:38:32.661 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:38:32.741 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:38:32.752 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:38:32.756 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 96.3074ms
+2022-05-31 11:38:32.756 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:38:32.766 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 109.1099ms
+2022-05-31 11:40:12.565 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:40:12.565 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:40:12.581 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:40:12.581 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:40:12.588 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 37.7273ms
+2022-05-31 11:40:12.588 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 37.0817ms
+2022-05-31 11:40:12.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:40:12.615 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:40:12.662 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:40:12.674 +03:00 [INF] Authorization was successful.
+2022-05-31 11:40:12.676 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:40:12.699 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:40:12.725 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:40:12.803 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:40:12.903 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:40:12.970 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:40:12.981 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 280.9021ms
+2022-05-31 11:40:12.982 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:40:12.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 387.1798ms
+2022-05-31 11:40:13.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:40:13.017 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:40:13.025 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:40:13.026 +03:00 [INF] Authorization was successful.
+2022-05-31 11:40:13.026 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:40:13.026 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:40:13.027 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:40:13.030 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:40:13.120 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:40:13.154 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:40:13.190 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 163.0237ms
+2022-05-31 11:40:13.190 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:40:13.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 190.8001ms
+2022-05-31 11:43:15.380 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.384 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.408 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.411 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.417 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 55.1276ms
+2022-05-31 11:43:15.418 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 33.8027ms
+2022-05-31 11:43:15.464 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.470 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.529 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:15.534 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:15.586 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.588 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.594 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:15.595 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:15.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 130.6531ms
+2022-05-31 11:43:15.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 31.7493ms
+2022-05-31 11:43:15.766 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.768 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.784 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:15.784 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:15.786 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 20.0329ms
+2022-05-31 11:43:15.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:15.794 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:15.805 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:15.805 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:15.809 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 15.1358ms
+2022-05-31 11:43:19.013 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:19.014 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:19.027 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:19.027 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:19.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 18.3170ms
+2022-05-31 11:43:19.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:19.039 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:19.040 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:19.040 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:19.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 4.9571ms
+2022-05-31 11:43:33.354 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:43:33.354 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:33.356 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.9323ms
+2022-05-31 11:43:33.367 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 23
+2022-05-31 11:43:33.367 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:33.369 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:33.369 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:33.371 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 23 - 401 - - 3.5315ms
+2022-05-31 11:43:33.834 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:33.834 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:33.835 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:33.835 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:33.837 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 2.0676ms
+2022-05-31 11:43:33.961 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 11:43:33.962 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:33.962 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:33.962 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:33.963 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 401 - - 1.4384ms
+2022-05-31 11:43:34.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:34.496 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:34.496 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:43:34.496 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:43:34.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 1.5269ms
+2022-05-31 11:43:46.278 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:43:46.278 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:43:46.279 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:46.279 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:46.279 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.3916ms
+2022-05-31 11:43:46.279 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.5512ms
+2022-05-31 11:43:46.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:46.309 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:46.352 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:43:46.356 +03:00 [INF] Authorization was successful.
+2022-05-31 11:43:46.357 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:43:46.385 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:43:46.405 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:43:46.461 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:43:46.548 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:43:46.557 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:43:46.568 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 182.0782ms
+2022-05-31 11:43:46.568 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:43:46.578 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 277.6760ms
+2022-05-31 11:43:46.598 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:43:46.598 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:43:46.601 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:43:46.601 +03:00 [INF] Authorization was successful.
+2022-05-31 11:43:46.601 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:43:46.602 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:43:46.602 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:43:46.603 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:43:46.861 +03:00 [INF] Executed DbCommand (218ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:43:46.883 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:43:46.888 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 285.883ms
+2022-05-31 11:43:46.888 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:43:46.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 291.5414ms
+2022-05-31 11:49:44.354 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:49:44.360 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:49:44.392 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:44.393 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:44.405 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 66.2747ms
+2022-05-31 11:49:44.420 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 65.6449ms
+2022-05-31 11:49:44.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:49:44.430 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:44.440 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:49:44.441 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:49:44.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:49:44.453 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:44.454 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 23.9923ms
+2022-05-31 11:49:44.454 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:49:44.454 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:49:44.455 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 3.1390ms
+2022-05-31 11:49:47.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:49:47.921 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:47.921 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:49:47.925 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:49:47.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 16.5636ms
+2022-05-31 11:49:47.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:49:47.983 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:49:47.984 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:49:47.991 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:49:48.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 76.7719ms
+2022-05-31 11:53:45.278 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:53:45.280 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:53:45.300 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:45.300 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:45.314 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 49.4978ms
+2022-05-31 11:53:45.315 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 49.6782ms
+2022-05-31 11:53:45.414 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:53:45.415 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:45.441 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:53:45.448 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:53:45.485 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 66.1608ms
+2022-05-31 11:53:45.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:53:45.504 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:45.505 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 11:53:45.506 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 11:53:45.512 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 8.3349ms
+2022-05-31 11:53:54.541 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:53:54.541 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:54.541 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.6975ms
+2022-05-31 11:53:54.570 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 11:53:54.570 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:54.570 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.7089ms
+2022-05-31 11:53:54.574 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:53:54.575 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:54.657 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:53:54.667 +03:00 [INF] Authorization was successful.
+2022-05-31 11:53:54.668 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:53:54.700 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:53:54.745 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:53:54.864 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:53:55.044 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:53:55.086 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:53:55.099 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 398.3514ms
+2022-05-31 11:53:55.099 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:53:55.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 527.0714ms
+2022-05-31 11:53:55.114 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 11:53:55.115 +03:00 [INF] CORS policy execution successful.
+2022-05-31 11:53:55.118 +03:00 [INF] Successfully validated the token.
+2022-05-31 11:53:55.119 +03:00 [INF] Authorization was successful.
+2022-05-31 11:53:55.119 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:53:55.121 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 11:53:55.123 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 11:53:55.126 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 11:53:55.270 +03:00 [INF] Executed DbCommand (139ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 11:53:55.327 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 11:53:55.334 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 212.7405ms
+2022-05-31 11:53:55.334 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 11:53:55.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 227.7105ms
+2022-05-31 12:06:56.155 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:06:56.155 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:06:56.347 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:06:56.363 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:06:56.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 340.0684ms
+2022-05-31 12:06:56.453 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 350.7470ms
+2022-05-31 12:06:56.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:06:56.670 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:06:56.688 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:06:56.690 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:06:56.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 38.8485ms
+2022-05-31 12:06:56.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:06:56.755 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:06:56.755 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:06:56.755 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:06:56.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 40.8602ms
+2022-05-31 12:07:04.924 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:07:04.924 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:07:04.924 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:07:04.924 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:07:04.924 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.7693ms
+2022-05-31 12:07:04.924 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.8053ms
+2022-05-31 12:07:04.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:07:04.944 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:07:05.019 +03:00 [INF] Successfully validated the token.
+2022-05-31 12:07:05.022 +03:00 [INF] Authorization was successful.
+2022-05-31 12:07:05.023 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:07:05.050 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 12:07:05.078 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 12:07:05.153 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 12:07:05.384 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 12:07:05.401 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 12:07:05.458 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 407.6698ms
+2022-05-31 12:07:05.458 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:07:05.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 517.1908ms
+2022-05-31 12:07:05.478 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:07:05.479 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:07:05.482 +03:00 [INF] Successfully validated the token.
+2022-05-31 12:07:05.482 +03:00 [INF] Authorization was successful.
+2022-05-31 12:07:05.482 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:07:05.485 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 12:07:05.485 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 12:07:05.510 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 12:07:05.543 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 12:07:05.548 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 12:07:05.551 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 65.3884ms
+2022-05-31 12:07:05.551 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:07:05.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 75.1724ms
+2022-05-31 12:09:11.517 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:09:11.580 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:09:11.593 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:11.621 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:12.145 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 661.9604ms
+2022-05-31 12:09:12.148 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 570.5966ms
+2022-05-31 12:09:12.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:09:12.565 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:12.656 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:09:12.690 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:09:12.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 351.8997ms
+2022-05-31 12:09:12.929 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:09:12.930 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:12.930 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:09:12.930 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:09:13.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 138.5061ms
+2022-05-31 12:09:21.247 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:09:21.247 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:21.252 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 5.1453ms
+2022-05-31 12:09:21.253 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:09:21.253 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:21.254 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.6312ms
+2022-05-31 12:09:21.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:09:21.310 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:21.310 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:09:21.310 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:09:21.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 10.4748ms
+2022-05-31 12:09:21.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:09:21.342 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:09:21.355 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 12:09:21.355 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 12:09:21.379 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 39.2263ms
+2022-05-31 12:11:49.207 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:11:49.207 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 12:11:49.234 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:11:49.234 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:11:49.243 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 85.4022ms
+2022-05-31 12:11:49.244 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 80.9591ms
+2022-05-31 12:11:49.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:11:49.306 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:11:49.524 +03:00 [INF] Successfully validated the token.
+2022-05-31 12:11:49.543 +03:00 [INF] Authorization was successful.
+2022-05-31 12:11:49.548 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:11:49.624 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 12:11:49.729 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 12:11:49.917 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 12:11:50.144 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 12:11:50.188 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 12:11:50.223 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 596.7422ms
+2022-05-31 12:11:50.225 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:11:50.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 12:11:50.227 +03:00 [INF] CORS policy execution successful.
+2022-05-31 12:11:50.229 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 925.3536ms
+2022-05-31 12:11:50.236 +03:00 [INF] Successfully validated the token.
+2022-05-31 12:11:50.236 +03:00 [INF] Authorization was successful.
+2022-05-31 12:11:50.236 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:11:50.237 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 12:11:50.237 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 12:11:50.239 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 12:11:50.538 +03:00 [INF] Executed DbCommand (294ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 12:11:50.662 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 12:11:50.741 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 504.5452ms
+2022-05-31 12:11:50.742 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 12:11:50.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 529.0451ms
+2022-05-31 13:29:14.082 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:29:15.220 +03:00 [INF] Executed DbCommand (301ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-05-31 13:29:15.737 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-31 13:29:17.060 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-31 13:29:17.074 +03:00 [INF] Hosting environment: Development
+2022-05-31 13:29:17.074 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-05-31 13:29:17.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-05-31 13:29:17.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 538.4817ms
+2022-05-31 13:29:23.833 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-05-31 13:29:24.913 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1080.1981ms
+2022-05-31 13:30:30.148 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:30:30.148 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:30:30.570 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:30.573 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:30.587 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 438.7635ms
+2022-05-31 13:30:30.588 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 439.4544ms
+2022-05-31 13:30:30.615 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:30:30.619 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:31.155 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:30:31.174 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:30:31.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 612.1599ms
+2022-05-31 13:30:31.251 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:30:31.251 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:31.259 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:30:31.260 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:30:31.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 10.7656ms
+2022-05-31 13:30:58.956 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:30:58.956 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:30:58.956 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:58.957 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:58.957 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0902ms
+2022-05-31 13:30:58.957 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0326ms
+2022-05-31 13:30:59.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:30:59.005 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:59.009 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:30:59.009 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:30:59.018 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 13.4427ms
+2022-05-31 13:30:59.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:30:59.034 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:30:59.036 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:30:59.036 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:30:59.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 9.2823ms
+2022-05-31 13:31:41.080 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:31:41.080 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:41.081 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.2056ms
+2022-05-31 13:31:41.081 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:31:41.081 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:41.082 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.6440ms
+2022-05-31 13:31:41.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:31:41.138 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:46.626 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:31:46.641 +03:00 [INF] Authorization was successful.
+2022-05-31 13:31:46.642 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:46.786 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:31:47.548 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:31:47.662 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:31:48.584 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:31:48.626 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:31:48.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:31:48.663 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:48.664 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:31:48.665 +03:00 [INF] Authorization was successful.
+2022-05-31 13:31:48.665 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:48.666 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:31:48.667 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:31:48.677 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 1869.1017ms
+2022-05-31 13:31:48.678 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:48.693 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 7555.5433ms
+2022-05-31 13:31:48.846 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:31:48.936 +03:00 [INF] Executed DbCommand (78ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:31:48.943 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:31:48.946 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 279.6276ms
+2022-05-31 13:31:48.957 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:49.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 349.4671ms
+2022-05-31 13:31:51.361 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:31:51.361 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:51.362 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.4676ms
+2022-05-31 13:31:51.370 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 13:31:51.371 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:51.372 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:31:51.372 +03:00 [INF] Authorization was successful.
+2022-05-31 13:31:51.372 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:31:51.395 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:31:51.575 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","FavouriteLaunchId":58,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:31:51.583 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:31:51.830 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:31:51.830 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:31:51.831 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:31:51.831 +03:00 [INF] Authorization was successful.
+2022-05-31 13:31:51.831 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:51.832 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:31:51.833 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "384d9eaa-c386-4a79-ae68-14e41e6144b3" {"UserId":"384d9eaa-c386-4a79-ae68-14e41e6144b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:31:51.836 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:31:51.845 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:31:51.846 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:31:51.847 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 14.885ms
+2022-05-31 13:31:51.847 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:31:51.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 17.7221ms
+2022-05-31 13:31:52.162 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:31:52.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:31:52.251 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 855.8932ms
+2022-05-31 13:31:52.253 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:31:52.265 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 200 - application/json;+charset=utf-8 893.9837ms
+2022-05-31 13:32:23.579 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:32:23.579 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:23.591 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0218ms
+2022-05-31 13:32:23.594 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:32:23.595 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:23.664 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 25.5108ms
+2022-05-31 13:32:23.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:32:23.668 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:23.668 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:23.668 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:23.743 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:32:23.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 79.3957ms
+2022-05-31 13:32:23.743 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:23.744 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:23.744 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:23.747 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 4.7638ms
+2022-05-31 13:32:26.816 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:32:26.817 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:26.817 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 14.5548ms
+2022-05-31 13:32:26.930 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 26
+2022-05-31 13:32:26.931 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:26.932 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:26.932 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:27.047 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 26 - 401 - - 116.8479ms
+2022-05-31 13:32:27.259 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:32:27.259 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:27.260 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:27.261 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:27.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 13.8130ms
+2022-05-31 13:32:29.143 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 26
+2022-05-31 13:32:29.143 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:29.143 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:29.144 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:29.219 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 26 - 401 - - 76.3212ms
+2022-05-31 13:32:29.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:32:29.562 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:32:29.562 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:32:29.562 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:32:29.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 8.3403ms
+2022-05-31 13:33:16.779 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:16.780 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:16.781 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:16.782 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:16.783 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 2.9331ms
+2022-05-31 13:33:16.783 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 3.4565ms
+2022-05-31 13:33:16.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:16.867 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:16.927 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:16.929 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:16.932 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:16.948 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:16.961 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:17.146 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:17.227 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:17.242 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:17.248 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 299.1382ms
+2022-05-31 13:33:17.248 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:17.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 383.5235ms
+2022-05-31 13:33:17.272 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:17.272 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:17.277 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:17.278 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:17.278 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:17.278 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:17.279 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:17.281 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:17.295 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:17.299 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:17.300 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 21.828ms
+2022-05-31 13:33:17.301 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:17.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 29.5682ms
+2022-05-31 13:33:18.531 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:18.531 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:18.532 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0999ms
+2022-05-31 13:33:18.586 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 24
+2022-05-31 13:33:18.586 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:18.594 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:18.594 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:18.594 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:18.595 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:18.732 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","FavouriteLaunchId":36,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:33:18.734 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:18.815 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:33:18.831 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:33:18.833 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 237.6889ms
+2022-05-31 13:33:18.833 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:18.834 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 24 - 200 - application/json;+charset=utf-8 248.0439ms
+2022-05-31 13:33:19.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:19.012 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:19.013 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:19.013 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:19.013 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:19.013 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:19.014 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:19.016 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:19.030 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:19.037 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:19.041 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 27.7876ms
+2022-05-31 13:33:19.042 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:19.045 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 33.5620ms
+2022-05-31 13:33:20.756 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 23
+2022-05-31 13:33:20.757 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:20.758 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:20.758 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:20.758 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:20.759 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:20.772 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","FavouriteLaunchId":1,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:33:20.777 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:20.791 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:33:21.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:33:21.271 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 511.0611ms
+2022-05-31 13:33:21.272 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:21.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:21.314 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 23 - 200 - application/json;+charset=utf-8 558.2456ms
+2022-05-31 13:33:21.343 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:21.344 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:21.344 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:21.344 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:21.345 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:21.345 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:21.346 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:21.410 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:21.417 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:21.418 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 73.2733ms
+2022-05-31 13:33:21.419 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:21.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 111.1986ms
+2022-05-31 13:33:22.294 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 26
+2022-05-31 13:33:22.294 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:22.295 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:22.295 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:22.295 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:22.295 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:22.352 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-05-31 13:33:22.388 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 92.4645ms
+2022-05-31 13:33:22.388 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:22.389 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 26 - 400 - application/json;+charset=utf-8 95.4622ms
+2022-05-31 13:33:22.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:22.792 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:22.793 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:22.793 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:22.793 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:22.793 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:22.794 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:22.795 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:22.808 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:22.815 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:22.816 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 22.2046ms
+2022-05-31 13:33:22.816 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:22.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 26.0325ms
+2022-05-31 13:33:26.629 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:26.629 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:26.630 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.0728ms
+2022-05-31 13:33:26.663 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 13:33:26.664 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:26.667 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:26.668 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:26.668 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:26.668 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:26.669 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","FavouriteLaunchId":345,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:33:26.670 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:27.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:27.038 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:27.039 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:27.039 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:27.039 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:27.040 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:27.040 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:27.041 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:27.425 +03:00 [INF] Executed DbCommand (382ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:27.425 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:33:27.426 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:27.433 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 393.3286ms
+2022-05-31 13:33:27.433 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:27.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 411.0023ms
+2022-05-31 13:33:27.520 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:33:27.521 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 852.8315ms
+2022-05-31 13:33:27.523 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:33:27.559 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 200 - application/json;+charset=utf-8 896.0013ms
+2022-05-31 13:33:43.571 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:43.571 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:33:43.571 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:43.571 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:43.625 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.8901ms
+2022-05-31 13:33:43.626 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.8901ms
+2022-05-31 13:33:43.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:43.659 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:43.663 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:43.664 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:43.664 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:43.664 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:43.664 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:43.666 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:43.892 +03:00 [INF] Executed DbCommand (222ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:43.921 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:43.925 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 261.0469ms
+2022-05-31 13:33:43.925 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:43.947 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:33:43.947 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:33:43.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 289.9147ms
+2022-05-31 13:33:43.948 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:33:43.948 +03:00 [INF] Authorization was successful.
+2022-05-31 13:33:43.948 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:43.949 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:33:43.949 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "34b482b7-ec45-4d5a-9ee0-3ee4263166b3" {"UserId":"34b482b7-ec45-4d5a-9ee0-3ee4263166b3","$type":"GetLaunchListQuery"}
+2022-05-31 13:33:43.950 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:33:43.971 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:33:43.982 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:33:43.986 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 37.3106ms
+2022-05-31 13:33:43.986 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:33:43.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 41.2203ms
+2022-05-31 13:34:27.414 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:34:27.415 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:34:27.416 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:34:27.416 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:34:27.417 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 3.0190ms
+2022-05-31 13:34:27.417 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 47.8796ms
+2022-05-31 13:34:27.439 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:34:27.440 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:34:27.442 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:34:27.442 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:34:27.455 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 15.5080ms
+2022-05-31 13:34:27.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:34:27.718 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:34:27.719 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:34:27.719 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:34:27.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 83.4270ms
+2022-05-31 13:38:23.283 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:38:23.285 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:38:23.302 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:23.302 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:23.314 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 40.6004ms
+2022-05-31 13:38:23.318 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 46.4588ms
+2022-05-31 13:38:23.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:38:23.412 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:23.435 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:38:23.436 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:38:23.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 142.5713ms
+2022-05-31 13:38:23.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:38:23.519 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:23.524 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:38:23.524 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:38:23.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 9.0483ms
+2022-05-31 13:38:30.881 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:38:30.881 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:30.883 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:38:30.884 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.5625ms
+2022-05-31 13:38:30.885 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:30.887 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 2.6552ms
+2022-05-31 13:38:30.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:38:30.910 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:30.931 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:38:30.931 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:38:30.936 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 29.8874ms
+2022-05-31 13:38:30.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:38:30.995 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:38:31.005 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-05-31 13:38:31.005 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-05-31 13:38:31.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 401 - - 33.4504ms
+2022-05-31 13:39:06.028 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:06.028 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:06.028 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:06.028 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:06.029 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.9086ms
+2022-05-31 13:39:06.029 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.9086ms
+2022-05-31 13:39:06.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:06.064 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:06.131 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:06.141 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:06.141 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:06.166 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:06.184 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:06.295 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:06.396 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:06.498 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:06.506 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 339.504ms
+2022-05-31 13:39:06.506 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:06.508 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 443.8729ms
+2022-05-31 13:39:06.515 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:06.515 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:06.519 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:06.519 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:06.519 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:06.519 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:06.522 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:06.523 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:06.543 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:06.558 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:06.560 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 40.2563ms
+2022-05-31 13:39:06.560 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:06.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 46.3567ms
+2022-05-31 13:39:08.118 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:08.118 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:08.119 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 1.2597ms
+2022-05-31 13:39:08.129 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 13:39:08.129 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:08.130 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:08.130 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:08.130 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:08.131 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:08.175 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":456,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:08.177 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:08.203 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:08.216 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:08.236 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 105.4083ms
+2022-05-31 13:39:08.237 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:08.237 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 200 - application/json;+charset=utf-8 108.2928ms
+2022-05-31 13:39:08.616 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:08.617 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:08.618 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:08.618 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:08.618 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:08.618 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:08.619 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:08.621 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:08.630 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:08.634 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:08.635 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 16.8717ms
+2022-05-31 13:39:08.636 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:08.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 20.1694ms
+2022-05-31 13:39:10.082 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 26
+2022-05-31 13:39:10.082 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:10.083 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:10.083 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:10.083 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:10.083 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:10.102 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-05-31 13:39:10.104 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 20.3798ms
+2022-05-31 13:39:10.104 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:10.106 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 26 - 400 - application/json;+charset=utf-8 23.8873ms
+2022-05-31 13:39:10.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:10.581 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:10.583 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:10.583 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:10.583 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:10.583 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:10.583 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:10.584 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:10.596 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:10.599 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:10.600 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 16.6848ms
+2022-05-31 13:39:10.600 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:10.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 20.2266ms
+2022-05-31 13:39:12.106 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 13:39:12.106 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:12.109 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:12.110 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:12.110 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:12.110 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:12.114 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":325,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:12.116 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:12.127 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:12.142 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:12.143 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 33.4428ms
+2022-05-31 13:39:12.144 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:12.144 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 200 - application/json;+charset=utf-8 38.2503ms
+2022-05-31 13:39:12.597 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:12.598 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:12.598 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:12.599 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:12.599 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:12.599 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:12.599 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:12.600 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:12.610 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:12.614 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:12.615 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 15.7179ms
+2022-05-31 13:39:12.615 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:12.616 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 18.5009ms
+2022-05-31 13:39:14.449 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:14.449 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:14.449 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.7817ms
+2022-05-31 13:39:14.457 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 26
+2022-05-31 13:39:14.457 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:14.458 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:14.458 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:14.458 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:14.458 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:14.459 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":2543,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:14.459 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:14.467 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:14.481 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:14.482 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 23.4736ms
+2022-05-31 13:39:14.482 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:14.487 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 26 - 200 - application/json;+charset=utf-8 29.9407ms
+2022-05-31 13:39:14.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:14.948 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:14.949 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:14.949 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:14.949 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:14.949 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:14.949 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:14.951 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:14.958 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:14.961 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:14.961 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 12.3773ms
+2022-05-31 13:39:14.961 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:14.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 14.5911ms
+2022-05-31 13:39:18.640 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 25
+2022-05-31 13:39:18.642 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:18.644 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:18.645 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:18.645 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:18.645 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:18.646 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":124,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:18.647 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:18.658 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:18.672 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:18.674 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 28.5066ms
+2022-05-31 13:39:18.674 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:18.677 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 25 - 200 - application/json;+charset=utf-8 36.8058ms
+2022-05-31 13:39:19.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:19.144 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:19.144 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:19.144 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:19.144 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:19.145 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:19.145 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:19.145 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:19.157 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:19.160 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:19.161 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 15.92ms
+2022-05-31 13:39:19.161 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:19.176 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 32.3041ms
+2022-05-31 13:39:22.794 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:22.794 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:22.794 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:22.794 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:22.794 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.7312ms
+2022-05-31 13:39:22.795 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.3285ms
+2022-05-31 13:39:22.802 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:22.802 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:22.804 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:22.804 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:22.804 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:22.804 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:22.804 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:22.805 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:22.810 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:22.814 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:22.816 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 11.6507ms
+2022-05-31 13:39:22.816 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:22.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 15.0236ms
+2022-05-31 13:39:22.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:22.819 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:22.821 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:22.821 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:22.823 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:22.823 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:22.824 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:22.824 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:22.838 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:22.844 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:22.845 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 21.6972ms
+2022-05-31 13:39:22.845 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:22.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 30.4987ms
+2022-05-31 13:39:25.724 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:25.724 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:25.724 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.8192ms
+2022-05-31 13:39:25.733 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 27
+2022-05-31 13:39:25.733 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:25.738 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:25.739 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:25.739 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:25.739 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:25.742 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":14143,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:25.747 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:25.756 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:25.767 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:25.768 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 28.4919ms
+2022-05-31 13:39:25.768 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:25.769 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 27 - 200 - application/json;+charset=utf-8 36.2164ms
+2022-05-31 13:39:26.225 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:26.225 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:26.226 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:26.226 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:26.226 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:26.228 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:26.228 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:26.229 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:26.240 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:26.244 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:26.245 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 16.4009ms
+2022-05-31 13:39:26.245 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:26.249 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 21.8879ms
+2022-05-31 13:39:27.659 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 23
+2022-05-31 13:39:27.659 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:27.661 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:27.661 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:27.662 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:27.662 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:27.663 +03:00 [INF] SpaceXinfo Request: CreateLaunchCommand "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","FavouriteLaunchId":1,"NotificationTime":"0001-01-01T00:00:00.0000000","$type":"CreateLaunchCommand"}
+2022-05-31 13:39:27.663 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:27.670 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Launches" ("Id", "FavouriteLaunchId", "NotificationTime", "UserId")
+VALUES (@p0, @p1, @p2, @p3);
+2022-05-31 13:39:27.678 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2022-05-31 13:39:27.679 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi) in 16.6815ms
+2022-05-31 13:39:27.679 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:27.679 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44382/api/Launch application/json 23 - 200 - application/json;+charset=utf-8 20.4770ms
+2022-05-31 13:39:28.163 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/Launch - -
+2022-05-31 13:39:28.163 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:28.164 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:28.164 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:28.164 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:28.164 +03:00 [INF] Route matched with {action = "GetAll", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm]] GetAll() on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).
+2022-05-31 13:39:28.165 +03:00 [INF] SpaceXinfo Request: GetLaunchListQuery "648b9498-5f15-4fbb-9106-91f228920a57" {"UserId":"648b9498-5f15-4fbb-9106-91f228920a57","$type":"GetLaunchListQuery"}
+2022-05-31 13:39:28.165 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-05-31 13:39:28.175 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_UserId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "l"."FavouriteLaunchId", "l"."Id"
+FROM "Launches" AS "l"
+WHERE "l"."UserId" = @__request_UserId_0
+2022-05-31 13:39:28.178 +03:00 [INF] Executing OkObjectResult, writing value of type 'SpaceXinfo.Application.Launches.Queries.GetLaunchList.LaunchListVm'.
+2022-05-31 13:39:28.179 +03:00 [INF] Executed action SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi) in 14.8088ms
+2022-05-31 13:39:28.179 +03:00 [INF] Executed endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.GetAll (SpaceXinfo.WebApi)'
+2022-05-31 13:39:28.182 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/Launch - - - 200 - application/json;+charset=utf-8 18.6652ms
+2022-05-31 13:39:30.755 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/Launch - -
+2022-05-31 13:39:30.755 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:30.755 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/Launch - - - 204 - - 0.4866ms
+2022-05-31 13:39:30.761 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44382/api/Launch application/json 23
+2022-05-31 13:39:30.761 +03:00 [INF] CORS policy execution successful.
+2022-05-31 13:39:30.762 +03:00 [INF] Successfully validated the token.
+2022-05-31 13:39:30.762 +03:00 [INF] Authorization was successful.
+2022-05-31 13:39:30.762 +03:00 [INF] Executing endpoint 'SpaceXinfo.WebApi.Controllers.LaunchController.Create (SpaceXinfo.WebApi)'
+2022-05-31 13:39:30.762 +03:00 [INF] Route matched with {action = "Create", controller = "Launch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Guid]] Create(SpaceXinfo.WebApi.Models.CreateLaunchDto) on controller SpaceXinfo.WebApi.Controllers.LaunchController (SpaceXinfo.WebApi).

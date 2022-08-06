@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bc791714ce.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
-    
+<body class="body__bg">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <i class="fa-solid fa-rocket"></i>
+                    <b>SpaceX</b>info
+                </div>
+                <nav class="nav">
+                    <a href="" class="nav__link">Launches</a>
+                    <a href="" class="nav__link">Vehicles</a>
+                    <a href="" class="nav__link">What's new?</a>
+                    <a href="" class="nav__link">Acronyms</a>
+                    <a href="" class="nav__link">About</a>
+                    <button class="btn btn--register">Register</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="intro">
+
+                <div class="intro__left">
+                    <h1 class="intro__title">SpaceX</h1>
+                    <div class="intro__text"><b>SpaceX</b> designs, manufactures and launches 
+                    advanced rockets and spacecraft. The company was founded in <b>2002</b> to 
+                    revolutionize space technology, with the ultimate goal of enabling 
+                    people to live on other planets.</div>
+                    <button class="btn btn--big">View Launches</button>
+                </div>
+                <div class="intro__right">
+                    <h1 class="intro__title">Next Launch In</h1>
+                    <time class="intro__timer">01:23:50:11</time>
+                    <div class="intro__launch">
+                        <div class="intro__launch__info">
+                            <div class="intro__launch__info__item">CCSFS SLC 40</div>
+                            <div class="intro__launch__info__item">F-NR</div>
+                        </div>
+
+                        <div class="intro__launch__name">
+                            <div class="intro__launch__name__item">KPLO</div>
+                            <div class="intro__launch__name__item">177</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__name">SpaceXinfo</div>
+                <div class="footer__origins">Data was taken from 
+                    <a href="https://docs.spacexdata.com" target="_blank">
+                        docs.spacexdata.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

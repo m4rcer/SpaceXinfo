@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+    text-decoration: none;
 
     border: 2px solid @white;
     border-radius: 30px;
@@ -25,11 +26,25 @@
         background-color: @white;
         color: @black;
     }
+
+    &.active {
+        background-color: @white;
+        color: @black;
+
+        &:hover {
+            background-color: @black;
+            color: @white;
+        }
+    }
 }
 
 .btn--big {
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
+}
+
+.btn--long {
+    min-width: 300px;
 }
 
 .btn--register {

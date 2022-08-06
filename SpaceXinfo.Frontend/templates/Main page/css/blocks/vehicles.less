@@ -1,0 +1,115 @@
+// main: ../style.less
+
+.vehicles {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.vehicles__title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.vehicles__content {
+    display: flex;
+    justify-content: center;
+}
+
+.vehicles__divider {
+    width: 1px;
+    background-color: @white;
+    margin: 0 2rem;
+}
+
+.vehicles__column {
+    width: 45%;
+}
+
+.vehicles__column__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.vehicles__item {
+    background-color: @gray;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: all .3s linear;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.vehicles__item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicles__item__angle {
+    font-size: 1.5rem;
+    transition: transform .3s linear;
+
+    &--up {
+        transform: rotate(180deg);
+    }
+}
+
+.vehicles__item__title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.vehicles__item__photo {
+    margin: -2rem;
+    margin-bottom: 1rem;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.vehicles__item__text {
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: @lightgray;
+}
+
+.vehicles__item__specs {
+    font-size: 1.5rem;
+    color: @orange;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.vehicles__item__info {
+    color: @lightgray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.vehicles__item__info__values {
+    text-align: right;
+}
+
+.vehicles__item__info__char, .vehicles__item__info__val {
+    margin-bottom: 0.2rem;
+}

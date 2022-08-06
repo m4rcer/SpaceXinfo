@@ -1,0 +1,41 @@
+// compress:true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: @white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+// Blocks
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/nav";
+@import "blocks/section";
+@import "blocks/intro";
+@import "blocks/body";
+@import "blocks/footer";
+

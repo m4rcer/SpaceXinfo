@@ -6,11 +6,18 @@ html {
     font-size: 15px;
 }
 
+// html, body {
+//     //height: 100%;
+// }
+
 body {
     margin: 0;
     font-family: 'Space Mono', monospace;
     font-size: 1rem;
     color: @white;
+    background-color: @black;
+    display: flex;
+    flex-direction: column;
 }
 
 *,
@@ -34,8 +41,19 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/header";
 @import "blocks/btn";
 @import "blocks/nav";
-@import "blocks/section";
 @import "blocks/intro";
 @import "blocks/body";
 @import "blocks/footer";
+@import "blocks/content";
+@import "blocks/launches";
+@import "blocks/register";
+@import "blocks/vehicles";
+@import "blocks/acronyms";
+@import "blocks/about";
+@import "blocks/cores";
+
+// Helpers 
+
+@import "helpers";
+
 

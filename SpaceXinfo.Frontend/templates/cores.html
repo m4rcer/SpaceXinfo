@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/bc791714ce.js" crossorigin="anonymous"></script>
     <title>SpaceXinfo</title>
 </head>
-<body>
+<body class="no-scroll1">
 <div class="wrapper">
     <header class="header">
         <div class="container">
@@ -298,5 +298,79 @@
         </div>
     </footer>
 </div>
+
+<!-- Modals -->
+
+<div class="modal" style="display: none">
+    <div class="modal__dialog">
+        <div class="modal__close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        
+        <div class="modal__cores">
+            <div class="modal__cores__header">
+                <div class="modal__cores__col">
+                    <div class="modal__cores__header__info">Core Serial</div>
+                    <div class="modal__cores__header__title">Merlin1A</div>
+                </div>
+
+                <div class="modal__cores__col
+                modal__cores__col--right">
+                    <div class="modal__cores__header__info">Block</div>
+                    <div class="modal__cores__header__title">TBD</div>
+                </div>
+            </div>
+
+            <div class="modal__cores__text">
+                Engine failure at T+33 seconds resulted in loss of vehicle
+            </div>
+
+            <div class="modal__cores__info">
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">Status</div>    
+                    <div class="modal__cores__info__item">lost</div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">Missions</div>    
+                    <div class="modal__cores__info__item">Merlin1A.1</div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">Flights</div>    
+                    <div class="modal__cores__info__item">1</div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">RTLS attempt</div>    
+                    <div class="modal__cores__info__item">
+                        <i class="fa-solid fa-circle-xmark 
+                        modal__cores__info__fail"></i>
+                    </div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">RTLS landing</div>    
+                    <div class="modal__cores__info__item">0</div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">ASDS attempt</div>    
+                    <div class="modal__cores__info__item">
+                        <i class="fa-solid fa-circle-xmark 
+                        modal__cores__info__fail"></i>
+                    </div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">ASDS landing</div>    
+                    <div class="modal__cores__info__item">0</div>    
+                </div>
+                <div class="modal__cores__info__row">
+                    <div class="modal__cores__info__item">Water landing</div>    
+                    <div class="modal__cores__info__item">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
 </body>
 </html>

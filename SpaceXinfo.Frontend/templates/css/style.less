@@ -7,10 +7,6 @@ html {
     height: 100%;
 }
 
-// html, body {
-//     //height: 100%;
-// }
-
 body {
     margin: 0;
     font-family: 'Space Mono', monospace;
@@ -20,6 +16,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -63,6 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/acronyms";
 @import "blocks/about";
 @import "blocks/cores";
+@import "blocks/modal";
+@import "blocks/modal__launch";
+@import "blocks/modal__rocket";
+@import "blocks/modal__capsule";
+@import "blocks/modal__cores";
+@import "blocks/user";
 
 // Helpers 
 

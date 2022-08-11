@@ -1,0 +1,77 @@
+// compress:true
+
+@import "vars";
+
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: @white;
+    background-color: @black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;    
+}
+
+.body-bg {
+    background: @black url("../img/intro-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#root, .App {
+    height: 100%;
+}
+
+// UI
+
+@import "../components/UI/Button/Button.module.less";
+@import "../components/UI/Header/Header.module.less";
+@import "../components/UI/Nav/Nav.module.less";
+@import "../components/UI/Footer/Footer.module.less";
+@import "../components/UI/Container/Container.module.less";
+
+// Pages
+
+@import "../components/Pages/MainPage/MainPage.module.less";
+
+
+// Helpers 
+
+@import "helpers";
+
+

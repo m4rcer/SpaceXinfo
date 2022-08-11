@@ -1,0 +1,42 @@
+// main: ../../../css/style.less
+
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header--bg {
+    background-color: @black;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header__logo {
+    font-size: 2rem;   
+
+    b {
+        font-size: 2.2rem;
+    }
+
+}
+
+.header__logo__link {
+    color: @white;
+    text-decoration: none;
+
+    &:hover .header__icon {
+            transform: scale(1.1)
+            translate3d(5px, -5px, 0);
+    }
+}
+
+.header__icon {
+    transition: all .3s linear;
+    margin-right: 1rem;
+}

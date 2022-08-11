@@ -16,19 +16,34 @@
     font-weight: 700;
 }
 
-.user__settings {
+.user__buttons {
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.user__settings, .user__logout {
     cursor: pointer;
 
     i {
         font-size: 3.5rem;
         transition: transform 0.3s linear;
     }
+}
 
+.user__settings {
     &:hover i {
         transform: rotate(90deg);
+    }
+}
+
+.user__logout {
+    margin-left: 2rem;
+    transition: all .3s linear;
+
+    &:hover {
+        transform: scale(1.05);
     }
 }
 

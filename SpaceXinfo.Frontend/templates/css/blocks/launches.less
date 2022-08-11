@@ -85,12 +85,20 @@
         transform: translateY(-5px);
     }
 
-    &--calendar:hover {
+    &--calendar {
         color: @orange;
     }
 
     &--favourite:hover {
         color: @red;
+    }
+    
+    &--favourite.active {
+        color: @red;
+
+        &:hover {
+            color: @lightgray;
+        }
     }
 }
 

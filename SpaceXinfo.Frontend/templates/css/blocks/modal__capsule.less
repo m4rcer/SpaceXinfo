@@ -1,0 +1,91 @@
+// main: ../style.less
+
+.modal__capsule__photo {
+    position: relative;
+    overflow: hidden;
+    margin: -3rem;
+    height: 400px;
+    margin-bottom: 2rem;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.modal__capsule__photo__text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.modal__capsule__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.modal__capsule__header__info {
+    margin-bottom: 0.5rem;
+    color: @lightgray;
+
+    &--right {
+        text-align: right;
+    }
+}
+
+.modal__capsule__header__title {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.modal__capsule__header__status {
+    color: @lightgray;
+}
+
+.modal__capsule__info__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.modal__capsule__info {
+    margin-bottom: 3rem;
+}
+
+.modal__capsule__missions__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.modal__capsule__missions__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal__capsule__missions__item {
+    color: @orange;
+    margin-bottom: 1rem;
+    width: 48%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+        transition: transform .3s linear;
+    }
+
+    &:hover i {
+        transform: translateX(5px)
+        scale(1.05);
+    }
+}

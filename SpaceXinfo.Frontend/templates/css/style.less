@@ -4,11 +4,8 @@
 
 html {
     font-size: 15px;
+    height: 100%;
 }
-
-// html, body {
-//     //height: 100%;
-// }
 
 body {
     margin: 0;
@@ -18,6 +15,11 @@ body {
     background-color: @black;
     display: flex;
     flex-direction: column;
+    height: 100%;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -33,6 +35,16 @@ p {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.main {
+    flex: 1 1 auto;    
 }
 
 // Blocks
@@ -51,6 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/acronyms";
 @import "blocks/about";
 @import "blocks/cores";
+@import "blocks/modal";
+@import "blocks/modal__launch";
+@import "blocks/modal__rocket";
+@import "blocks/modal__capsule";
+@import "blocks/modal__cores";
+@import "blocks/user";
 
 // Helpers 
 

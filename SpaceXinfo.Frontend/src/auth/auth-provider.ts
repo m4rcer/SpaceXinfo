@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useRef } from 'react';
 import { User, UserManager } from 'oidc-client';
 import { setAuthHeader } from './auth-headers';
+import { setIsAuth } from '../utils/localStorage';
 
 type AuthProviderProps = {
     userManager: UserManager;
@@ -20,15 +21,19 @@ const AuthProvider: FC<AuthProviderProps> = ({
         };
         const onUserUnloaded = () => {
             setAuthHeader(null);
+            setIsAuth(false);
             console.log('User unloaded');
         };
         const onAccessTokenExpiring = () => {
+            setIsAuth(false);
             console.log('User token expiring');
         };
         const onAccessTokenExpired = () => {
+            setIsAuth(false);
             console.log('User token expired');
         };
         const onUserSignedOut = () => {
+            setIsAuth(false);
             console.log('User signed out');
         };
 

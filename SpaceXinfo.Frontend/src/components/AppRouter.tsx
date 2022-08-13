@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { privateRoutes, publicRoutes } from '../routes';
+import { getIsAuth } from '../utils/localStorage';
 
 export interface IAppRouterProps {};
 
 const AppRouter: React.FunctionComponent<IAppRouterProps> = props => {
-    const isAuth = false;
+    const [isAuth, setIsAuth] = useState(false);
+
+    useEffect(() => {
+        setIsAuth(getIsAuth());
+    }, []);
 
     return (
 
@@ -18,11 +23,6 @@ const AppRouter: React.FunctionComponent<IAppRouterProps> = props => {
                 element = {route.element}
                 key = {route.path}
             />)}
-
-            <Route
-            path="*"
-            element={<Navigate to="/" replace />}
-            />
         </Routes>
         :
         <Routes>
@@ -32,11 +32,6 @@ const AppRouter: React.FunctionComponent<IAppRouterProps> = props => {
                 element = {route.element}
                 key = {route.path}
             />)}
-
-            <Route
-            path="*"
-            element={<Navigate to="/" replace />}
-            />
         </Routes>
     )
 }

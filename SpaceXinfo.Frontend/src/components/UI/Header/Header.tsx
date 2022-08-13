@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { AppRoutes } from '../../../routes';
 import Container from '../Container/Container';
 import Nav from '../Nav/Nav';
@@ -7,6 +8,8 @@ import Nav from '../Nav/Nav';
 export interface IHeaderProps {};
 
 const Header: React.FunctionComponent<IHeaderProps> = props => {
+
+    const state = useTypedSelector(state => state.launches);
 
     return (
         <header className="header">

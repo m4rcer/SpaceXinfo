@@ -1,0 +1,29 @@
+2022-08-13 15:47:22.087 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'LaunchesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-08-13 15:47:23.076 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-08-13 15:47:23.364 +03:00 [INF] User profile is available. Using 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-13 15:47:23.629 +03:00 [INF] Creating key {b32f8248-85f1-4f1f-b563-96c50040c185} with creation date 2022-08-13 12:47:23Z, activation date 2022-08-13 12:47:23Z, and expiration date 2022-11-11 12:47:23Z.
+2022-08-13 15:47:23.733 +03:00 [INF] Writing data to file 'C:\Users\m4rce\AppData\Local\ASP.NET\DataProtection-Keys\key-b32f8248-85f1-4f1f-b563-96c50040c185.xml'.
+2022-08-13 15:47:24.741 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-13 15:47:24.742 +03:00 [INF] Hosting environment: Development
+2022-08-13 15:47:24.742 +03:00 [INF] Content root path: D:\Programming\SpaceXinfo\SpaceXinfo.Backend\SpaceXinfo.WebApi
+2022-08-13 15:47:24.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2022-08-13 15:47:26.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 301 - - 1185.3264ms
+2022-08-13 15:47:26.156 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/index.html - -
+2022-08-13 15:47:26.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/index.html - - - 200 - text/html;charset=utf-8 464.5913ms
+2022-08-13 15:48:31.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - -
+2022-08-13 15:48:31.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui.css - -
+2022-08-13 15:48:31.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - -
+2022-08-13 15:48:31.500 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-08-13 15:48:31.500 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-08-13 15:48:31.511 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-08-13 15:48:31.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui.css - - - 200 143943 text/css 314.2117ms
+2022-08-13 15:48:31.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 327.9250ms
+2022-08-13 15:48:31.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger-ui-bundle.js - - - 200 1095087 application/javascript 349.0974ms
+2022-08-13 15:48:33.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/favicon-32x32.png - -
+2022-08-13 15:48:33.461 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-08-13 15:48:33.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/favicon-32x32.png - - - 200 628 image/png 5.6804ms
+2022-08-13 15:48:35.489 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-08-13 15:48:37.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2124.0398ms
+2022-08-13 17:40:37.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2022-08-13 17:40:38.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 781.1335ms

@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { signinRedirect, signoutRedirect } from '../../../auth/user-service';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { AppRoutes } from '../../../routes';
+import { getIsAuth } from '../../../utils/localStorage';
 import Button from '../Button/Button';
 import { ButtonVariants } from '../Button/ButtonVariants';
 
 export interface INavProps {};
 
 const Nav: React.FunctionComponent<INavProps> = props => {
+    const {login, logout} = useActions();
+    const [isAuth, setIsAuth] = useState<boolean>(false);
+
+
+    useEffect(() => {
+        setIsAuth(getIsAuth());
+    }, []);
+
     return (
         <nav className="nav">
             <Link to={AppRoutes.Launches} className="nav__link">Launches</Link>
@@ -14,9 +26,9 @@ const Nav: React.FunctionComponent<INavProps> = props => {
             <Link to={AppRoutes.Cores} className="nav__link">Cores</Link>
             <Link to={AppRoutes.Acronyms} className="nav__link">Acronyms</Link>
             <Link to={AppRoutes.About} className="nav__link">About</Link>
-            <Link to={AppRoutes.Register}>
-                <Button variants={[ButtonVariants.Register]}>Register</Button>
-            </Link>
+            {!isAuth ? <Button variants={[ButtonVariants.Register]}
+            OnClick={() => signinRedirect()}>Login</Button>
+            : <Link to={AppRoutes.Profile} className="nav__link nav__link--profile">Profile</Link>}
         </nav>
         )
 }

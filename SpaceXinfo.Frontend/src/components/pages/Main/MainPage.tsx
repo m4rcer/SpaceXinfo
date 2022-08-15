@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { AppRoutes } from '../../../routes';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass } from '../../../utils/classes';
 import Button from '../../UI/Button/Button';
@@ -24,7 +26,11 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
                     advanced rockets and spacecraft. The company was founded in <b>2002</b> to 
                     revolutionize space technology, with the ultimate goal of enabling 
                     people to live on other planets.</div>
-                    <Button variants={[ButtonVariants.Big]}>View Launches</Button>
+                    <Link to={AppRoutes.Launches}>
+                        <Button variants={[ButtonVariants.Big]}>
+                            View Launches
+                        </Button>
+                    </Link>
                 </div>
                 <div className="intro__right">
                     <h1 className="intro__title">Next Launch In</h1>

@@ -1,12 +1,11 @@
 import React, { ReactNode } from 'react';
+import { LaunchListItemType } from '../../../types/Launches';
 import Launch from '../Launch/Launch';
-import { LaunchType } from '../Launch/LaunchType';
 
 export interface ILaunchesColumnProps {
     children: ReactNode,
-    launches: LaunchType[],
+    launches: LaunchListItemType[],
     isTextRight?: boolean,
-    
 };
 
 const LaunchesColumn: React.FunctionComponent<ILaunchesColumnProps> = ({
@@ -24,7 +23,7 @@ const LaunchesColumn: React.FunctionComponent<ILaunchesColumnProps> = ({
 
             <div className="launches__list">
                 {launches.map((launch) => 
-                <Launch launch={launch}/>)}
+                <Launch key={launch.id} launch={launch}/>)}
             </div>
         </div>
     )

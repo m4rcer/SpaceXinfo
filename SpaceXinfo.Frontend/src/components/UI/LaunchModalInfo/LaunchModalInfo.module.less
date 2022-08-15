@@ -1,0 +1,47 @@
+// main: ../../../css/style.less
+
+.modal__launch__char__item {
+    width: 100%;
+    background-color: @lightblack;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    min-width: 293px;
+}
+
+.modal__launch__char__info {
+    color: @lightgray;
+    margin-bottom: 1rem;
+}
+
+.modal__launch__char__info__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    i.fail {
+        color: @red;
+    }
+}
+
+.modal__launch__angle {
+    margin: 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &--up {
+        transform: rotate(180deg);
+    }
+}
+
+.modal__launch__char__specs__item {
+    font-size: 1rem;
+    color: @orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

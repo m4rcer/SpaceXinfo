@@ -1,10 +1,10 @@
 import React from 'react';
-import { LaunchType } from '../Launch/LaunchType';
+import { LaunchListItemType } from '../../../types/Launches';
 import LaunchesColumn from '../LaunchesColumn/LaunchesColumn';
 
 export interface ILaunchesListProps {
-    upcomingLaunches: LaunchType[],
-    pastLaunches: LaunchType[]
+    upcomingLaunches: LaunchListItemType[],
+    pastLaunches: LaunchListItemType[]
 };
 
 const LaunchesList: React.FunctionComponent<ILaunchesListProps> = ({

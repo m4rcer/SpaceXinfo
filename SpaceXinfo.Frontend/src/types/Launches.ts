@@ -1,3 +1,5 @@
+import { CoreListItemType } from "./Cores";
+
 export interface LaunchesState {
     launches: any[];
     loading: boolean;
@@ -25,3 +27,24 @@ interface FetchLaunchesErrorAction {
 }
 
 export type LaunchesAction = FetchLaunchesAction | FetchLaunchesSuccessAction | FetchLaunchesErrorAction;
+
+export interface LaunchListItemType {
+    id: string,
+    flight_number: number,
+    name: string,
+    success: boolean,
+    date_utc: string,
+    upcoming: boolean
+} 
+
+export interface LaunchType {
+    id: string,
+    flight_number: number,
+    name: string,
+    success: boolean,
+    date_utc: string,
+    upcoming: boolean,
+    launchpad: string,
+    cores: CoreListItemType[],
+    payloads: string[]
+}

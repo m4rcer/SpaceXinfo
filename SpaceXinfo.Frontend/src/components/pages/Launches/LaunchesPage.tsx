@@ -1,11 +1,7 @@
-import { rejects } from 'assert';
-import { resolve } from 'path';
 import React, { useEffect, useState } from 'react';
 import { fetchPastLaunches, fetchUpcomingLaunches } from '../../../api/spacexdata/launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { removeBodyClass } from '../../../utils/classes';
-import Launch from '../../UI/Launch/Launch';
-import { LaunchType } from '../../UI/Launch/LaunchType';
 import LaunchesList from '../../UI/LaunchesList/LaunchesList';
 import Section from '../../UI/Section/Section';
 

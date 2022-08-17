@@ -39,6 +39,7 @@ export interface LaunchListItemType {
 
 export interface LaunchType {
     id: string,
+    links: LinkType
     flight_number: number,
     name: string,
     success: boolean,
@@ -46,5 +47,12 @@ export interface LaunchType {
     upcoming: boolean,
     launchpad: string,
     cores: CoreListItemType[],
-    payloads: string[]
+    payloads: string[],
+    details: string,
+}
+
+export interface LinkType {
+    webcast: string,
+    wikipedia: string,
+    article: string
 }

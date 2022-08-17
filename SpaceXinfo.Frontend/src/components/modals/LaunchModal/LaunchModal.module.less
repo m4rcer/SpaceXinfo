@@ -40,6 +40,40 @@
     }
 }
 
+.modal__launch__decription {
+    margin-top: 2rem;
+}
+
+.modal__launch__socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__launch__socials__link {
+    
+    margin-top: 2rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    text-align: center;
+
+    &:hover {
+        text-decoration: underline;
+
+        i {
+            transform: scale(1.1);
+        }
+    }
+
+    i {
+        margin-left: 1rem;
+        color: @red;
+        font-size: 1.8rem;
+        transform: translateY(2px);
+        transition: transform 0.3s linear;
+    }
+}
+
 .modal__launch__content {
     display: flex;
     justify-content: space-between;

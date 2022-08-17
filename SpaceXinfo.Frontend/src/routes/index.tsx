@@ -4,6 +4,7 @@ import SignoutOidc from "../auth/SignoutOidc";
 import LaunchesPage from "../components/pages/Launches/LaunchesPage";
 import MainPage from "../components/pages/Main/MainPage";
 import ProfilePage from "../components/pages/Profile/ProfilePage";
+import VehiclesPage from "../components/pages/Vehicles/VehiclesPage";
 
 export enum AppRoutes {
     Main = "/",
@@ -25,7 +26,7 @@ export const privateRoutes = [
 export const publicRoutes = [
     {path: AppRoutes.Main, element: <MainPage/>},
     {path: AppRoutes.Launches, element: <LaunchesPage/>},
-    {path: AppRoutes.Vehicles, element: <MainPage/>},
+    {path: AppRoutes.Vehicles, element: <VehiclesPage/>},
     {path: AppRoutes.Cores, element: <MainPage/>},
     {path: AppRoutes.Acronyms, element: <MainPage/>},
     {path: AppRoutes.About, element: <MainPage/>},

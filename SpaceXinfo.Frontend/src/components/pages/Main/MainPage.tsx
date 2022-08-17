@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Countdown from 'react-countdown';
 import { Link } from 'react-router-dom';
+import { fetchNextLaunch } from '../../../api/spacexdata/launches';
 import { AppRoutes } from '../../../routes';
+import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass } from '../../../utils/classes';
 import Button from '../../UI/Button/Button';
@@ -11,9 +14,20 @@ export interface IMainPageProps {};
 
 const MainPage: React.FunctionComponent<IMainPageProps> = props => {
 
+    const [nextLaunch, setNextLaunch] = useState<LaunchType | null>(null);
+
+    async function getNextLaunch() {
+        const nextLaunch = await fetchNextLaunch();
+        setNextLaunch(nextLaunch);
+    }
+
     useEffect(() => {
         document.title = "SpaceXinfo"
         addBodyClass(bodyClasses.Background);
+    }, [])
+
+    useEffect(() => {
+        getNextLaunch();
     }, [])
 
     return <div className="intro">
@@ -34,16 +48,20 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
                 </div>
                 <div className="intro__right">
                     <h1 className="intro__title">Next Launch In</h1>
-                    <time className="intro__timer">01:23:50:11</time>
+
+                    {nextLaunch ? 
+                    <Countdown date={nextLaunch?.date_utc}
+                    className="intro__timer"/> 
+                    : 
+                    <time className="intro__timer">00:00:00:00</time>}
+
                     <div className="intro__launch">
-                        <div className="intro__launch__info">
-                            <div className="intro__launch__info__item">CCSFS SLC 40</div>
-                            <div className="intro__launch__info__item">F-NR</div>
+                        <div className="intro__launch__item">
+                            <div className="intro__launch__info">F-NR {nextLaunch?.flight_number}</div>
                         </div>
 
-                        <div className="intro__launch__name">
-                            <div className="intro__launch__name__item">KPLO</div>
-                            <div className="intro__launch__name__item">177</div>
+                        <div className="intro__launch__item">
+                            <div className="intro__launch__name">{nextLaunch?.name}</div>
                         </div>
                     </div>
                 </div>
@@ -53,3 +71,13 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
     </div>
 }
 export default MainPage;
+
+{/* <div className="intro__launch__item">
+                            <div className="intro__launch__info__item">CCSFS SLC 40</div>
+                            <div className="intro__launch__info__item">F-NR</div>
+                        </div>
+
+                        <div className="intro__launch__name">
+                            <div className="intro__launch__name__item">{nextLaunch?.name}</div>
+                            <div className="intro__launch__name__item">{nextLaunch?.flight_number}</div>
+                        </div> */}

@@ -56,6 +56,29 @@ const LaunchModal: React.FunctionComponent<ILaunchModalProps> = ({
             </div>
         </div>
 
+        {
+            launch.details
+            ?
+            <div className="modal__launch__decription">{launch.details}</div>
+            :
+            <div></div>
+        }
+
+        {
+            launch.links.webcast
+            ?
+            <div className="modal__launch__socials">
+                <a href={launch.links.webcast}
+                target="_blank"
+                className="modal__launch__socials__link">
+                    Watch on<i className="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            :
+            <div></div>
+        }
+        
+
         <div className="modal__launch__specs">
             <div className="modal__launch__specs__item">
                 <i className="fa-solid fa-circle-info"></i> Rocket Specs</div>
@@ -75,6 +98,7 @@ const LaunchModal: React.FunctionComponent<ILaunchModalProps> = ({
             </div>
 
             <div className="modal__launch__char">
+
                 <div className="modal__launch__char__title">
                     Payloads
                 </div>

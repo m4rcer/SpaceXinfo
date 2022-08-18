@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LaunchListItemType } from '../../../types/Launches';
+import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass, removeBodyClass } from '../../../utils/classes';
 import { dateToString } from '../../../utils/date';
@@ -7,7 +7,7 @@ import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
 
 export interface ILaunchProps {
-    launch: LaunchListItemType
+    launch: LaunchType
 };
 
 const Launch: React.FunctionComponent<ILaunchProps> = ({
@@ -64,7 +64,7 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
             </div>
         </div>
         <ModalBase isOpen={isModalShow} OnClose={OnClose}>
-            {<LaunchModal id={launch.id}/>}
+            <LaunchModal launch={launch}/>
         </ModalBase>
         </>
     )

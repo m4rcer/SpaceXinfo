@@ -1,0 +1,86 @@
+// main: ../../../css/style.less
+
+.modal__rocket__photo {
+    margin: -3rem;
+    margin-bottom: 0;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+.modal__rocket__photo__title {
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.modal__rocket__header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.modal__rocket__header__item--right {
+    text-align: right;
+}
+
+.modal__rocket__header__info {
+    color: @lightgray;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.modal__rocket__header__title {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+
+    i.fail {
+        color: @red;
+    }
+}
+
+.modal__rocket__header__date {
+    color: @lightgray;
+}
+
+.modal__rocket__text {
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.modal__rocket__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.modal__rocket__info__col--right {
+    text-align: right;
+}
+
+.modal__rocket__info__item {
+    margin-bottom: 0.8rem;
+}
+
+.modal__rocket__chars {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+

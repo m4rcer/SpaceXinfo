@@ -7,5 +7,14 @@ export interface CoreListItemType {
 }
 
 export interface CoreType {
-    serial: string
+    serial: string,
+    last_update: string,
+    rtls_attempts: number,
+    reuse_count: number,
+    rtls_landings: number,
+    block: number,
+    asds_attempts: number,
+    asds_landings: number,
+    status: string,
+    launches: string[]
 }

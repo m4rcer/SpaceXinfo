@@ -6,28 +6,13 @@ import LaunchModalCore from '../../UI/LaunchModalInfo/LaunchModalCore';
 import LaunchModalPayload from '../../UI/LaunchModalInfo/LaunchModalPayload';
 
 export interface ILaunchModalProps {
-    id: string
+    launch: LaunchType
 };
 
 const LaunchModal: React.FunctionComponent<ILaunchModalProps> = ({
-    id
+    launch
 }) => {
-
-    const [launch, setLaunch] = useState<LaunchType | null>(null);
-
-    async function getLaunch() {
-        const launch = await fetchLaunchById(id);
-        setLaunch(launch);
-    }
-
-    useEffect(() => {
-        getLaunch();
-    }, []);
     
-    if(!launch) {
-        return <h1>No Data</h1>
-    }
-
     return (
     <div className="modal__launch">
         <div className="modal__launch__header">
@@ -64,21 +49,6 @@ const LaunchModal: React.FunctionComponent<ILaunchModalProps> = ({
             <div></div>
         }
 
-        {
-            launch.links.webcast
-            ?
-            <div className="modal__launch__socials">
-                <a href={launch.links.webcast}
-                target="_blank"
-                className="modal__launch__socials__link">
-                    Watch on<i className="fa-brands fa-youtube"></i>
-                </a>
-            </div>
-            :
-            <div></div>
-        }
-        
-
         <div className="modal__launch__specs">
             <div className="modal__launch__specs__item">
                 <i className="fa-solid fa-circle-info"></i> Rocket Specs</div>
@@ -108,6 +78,21 @@ const LaunchModal: React.FunctionComponent<ILaunchModalProps> = ({
                 
             </div>
         </div>
+
+        {
+            launch.links.webcast
+            ?
+            <div className="modal__launch__socials">
+                <a href={launch.links.webcast}
+                target="_blank"
+                className="modal__launch__socials__link">
+                    Watch on<i className="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            :
+            <div></div>
+        }
+        
     </div>);
 }
 export default LaunchModal;

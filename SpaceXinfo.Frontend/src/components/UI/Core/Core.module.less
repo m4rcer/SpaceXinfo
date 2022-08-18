@@ -1,0 +1,73 @@
+// main: ../../../css/style.less
+
+.cores__item {
+    width: 49%;
+    background-color: @gray;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: all .3s linear;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.cores__item__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.cores__name {
+    font-size: 2rem;
+}
+
+.cores__type {
+    text-align: right;
+}
+
+.cores__block {
+    font-size: 1.5rem;
+    color: @lightgray;
+}
+
+.cores__type__name {
+    font-size: 1.5rem;
+}
+
+.cores__text {
+    line-height: 1.8;
+}
+
+.cores__breaker {
+    border: 0;
+    background-color: @black;
+    height: 1px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.cores__info {
+    display: flex;
+    justify-content: space-between;
+    color: @lightgray;
+}
+
+.cores__item__specs {
+    font-size: 1.5rem;
+    color: @orange;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

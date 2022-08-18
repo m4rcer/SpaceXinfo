@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { CapsuleType } from '../../../types/Capsules';
+import { bodyClasses } from '../../../utils/bodyClasses';
+import { addBodyClass, removeBodyClass } from '../../../utils/classes';
+import CapsuleModal from '../../modals/CapsuleModal/CapsuleModal';
+import ModalBase from '../../modals/ModalBase';
 
 export interface ICapsuleProps {
     capsule: CapsuleType
@@ -10,9 +14,21 @@ const Capsule: React.FunctionComponent<ICapsuleProps> = ({
 }) => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isModalShow, setIsModalShow] = useState(false);
+
+    function OnClose() {
+        setIsModalShow(false);
+        removeBodyClass(bodyClasses.NoScroll);
+    }
+
+    function OnOpen() {
+        setIsModalShow(true);
+        addBodyClass(bodyClasses.NoScroll);
+    }
 
     return (
-    <div className="vehicles__item">
+    <>
+    <div className="vehicles__item" onClick={OnOpen}>
         <div className="vehicles__item__photo">
             <img src="./img/capsules/c101.jfif" alt=""/>
         </div>
@@ -25,7 +41,10 @@ const Capsule: React.FunctionComponent<ICapsuleProps> = ({
             "vehicles__item__angle--up" 
             : 
             ""].join(" ")}
-            onClick={() => setIsOpen(!isOpen)}></i>
+            onClick={(event) => {
+                event.stopPropagation();
+                setIsOpen(!isOpen)
+            }}></i>
         </div>
         {
             isOpen
@@ -34,8 +53,8 @@ const Capsule: React.FunctionComponent<ICapsuleProps> = ({
                 <div className="vehicles__item__info__characteristics">
                     <div className="vehicles__item__info__char">Status</div>
                     <div className="vehicles__item__info__char">Reuse Count</div>
-                    <div className="vehicles__item__info__char">Water Landing</div>
-                    <div className="vehicles__item__info__char">Land Landing</div>
+                    <div className="vehicles__item__info__char">Water Landings</div>
+                    <div className="vehicles__item__info__char">Land Landings</div>
                 </div>
 
                 <div className="vehicles__item__info__values">
@@ -53,6 +72,10 @@ const Capsule: React.FunctionComponent<ICapsuleProps> = ({
             Capsule Specs
         </a>
     </div>
+    <ModalBase isOpen={isModalShow} OnClose={OnClose}>
+        <CapsuleModal capsule={capsule}/>
+    </ModalBase>
+    </>
     );
 }
 export default Capsule;

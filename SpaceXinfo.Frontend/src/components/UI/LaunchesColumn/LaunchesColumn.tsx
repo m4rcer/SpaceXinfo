@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
-import { LaunchListItemType } from '../../../types/Launches';
+import { LaunchType } from '../../../types/Launches';
 import Launch from '../Launch/Launch';
 
 export interface ILaunchesColumnProps {
     children: ReactNode,
-    launches: LaunchListItemType[],
+    launches: LaunchType[],
     isTextRight?: boolean,
 };
 

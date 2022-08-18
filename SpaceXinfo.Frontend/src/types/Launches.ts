@@ -28,15 +28,6 @@ interface FetchLaunchesErrorAction {
 
 export type LaunchesAction = FetchLaunchesAction | FetchLaunchesSuccessAction | FetchLaunchesErrorAction;
 
-export interface LaunchListItemType {
-    id: string,
-    flight_number: number,
-    name: string,
-    success: boolean,
-    date_utc: string,
-    upcoming: boolean
-} 
-
 export interface LaunchType {
     id: string,
     links: LinkType

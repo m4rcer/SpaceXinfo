@@ -7,3 +7,10 @@ export const fetchCoreById = async (id:string | undefined) => {
     );
     return response;
 }
+
+export const fetchCores = async () => {
+    const response = await axios.get<CoreType[]>(`https://api.spacexdata.com/latest/cores/`).then(
+        (response) => response.data
+    );
+    return response;
+}

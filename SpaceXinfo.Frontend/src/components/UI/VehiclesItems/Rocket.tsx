@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { RocketType } from '../../../types/Rockets';
+import { bodyClasses } from '../../../utils/bodyClasses';
+import { addBodyClass, removeBodyClass } from '../../../utils/classes';
+import ModalBase from '../../modals/ModalBase';
+import RocketModal from '../../modals/RocketModal/RocketModal';
 
 export interface IRocketProps {
     rocket: RocketType
@@ -8,11 +12,23 @@ export interface IRocketProps {
 const Rocket: React.FunctionComponent<IRocketProps> = ({
     rocket
 }) => {
-
     const [isOpen, setIsOpen] = useState(false);
 
+    const [isModalShow, setIsModalShow] = useState(false);
+
+    function OnClose() {
+        setIsModalShow(false);
+        removeBodyClass(bodyClasses.NoScroll);
+    }
+
+    function OnOpen() {
+        setIsModalShow(true);
+        addBodyClass(bodyClasses.NoScroll);
+    }
+
     return (
-    <div className="vehicles__item">
+    <>
+    <div className="vehicles__item" onClick={OnOpen}>
         <div className="vehicles__item__photo">
             <img src={rocket.flickr_images[0]} alt=""/>
         </div>
@@ -25,7 +41,10 @@ const Rocket: React.FunctionComponent<IRocketProps> = ({
             "vehicles__item__angle--up" 
             : 
             ""].join(" ")}
-            onClick={() => setIsOpen(!isOpen)}></i>
+            onClick={(event) => {
+                event.stopPropagation();
+                setIsOpen(!isOpen);
+            }}></i>
         </div>
         {
             isOpen
@@ -39,6 +58,10 @@ const Rocket: React.FunctionComponent<IRocketProps> = ({
             Rocket Specs
         </a>
     </div>
+    <ModalBase isOpen={isModalShow} OnClose={OnClose}>
+        <RocketModal rocket={rocket}/>
+    </ModalBase>
+    </>
     );
 }
 export default Rocket;

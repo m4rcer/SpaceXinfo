@@ -7,4 +7,6 @@ export interface CapsuleType {
     reuse_count: number,
     water_landings: number,
     land_landings: number,
+    last_update: string,
+    launches: string[],
 }

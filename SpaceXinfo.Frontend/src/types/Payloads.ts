@@ -1,3 +1,31 @@
+export interface PayloadState {
+    payload: PayloadType | null;
+    loading: boolean;
+    error: string | null;
+}
+
+export enum PayloadActionTypes {
+    FETCH_PAYLOAD_BY_ID = "FETCH_PAYLOAD_BY_ID",
+    FETCH_PAYLOAD_BY_ID_SUCCESS = "FETCH_PAYLOAD_BY_ID_SUCCESS",
+    FETCH_PAYLOAD_BY_ID_ERROR = "FETCH_PAYLOAD_BY_ID_ERROR",
+}
+
+interface FetchPayloadByIdAction {
+    type: PayloadActionTypes.FETCH_PAYLOAD_BY_ID;
+}
+
+interface FetchPayloadByIdSuccessAction {
+    type: PayloadActionTypes.FETCH_PAYLOAD_BY_ID_SUCCESS;
+    payload: PayloadType;
+}
+
+interface FetchPayloadByIdErrorAction {
+    type: PayloadActionTypes.FETCH_PAYLOAD_BY_ID_ERROR;
+    payload: string;
+}
+
+export type PayloadAction = FetchPayloadByIdAction | FetchPayloadByIdSuccessAction | FetchPayloadByIdErrorAction;
+
 export interface PayloadType {
     name: string,
     customers: string[],

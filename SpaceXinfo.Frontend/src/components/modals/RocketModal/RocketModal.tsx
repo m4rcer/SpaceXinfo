@@ -73,7 +73,7 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
 
             {
                 rocket.payload_weights.map((payloadWeight) =>
-                    <RocketModalItem title={payloadWeight.id.toUpperCase()}>
+                    <RocketModalItem key={payloadWeight.id} title={payloadWeight.id.toUpperCase()}>
                         <RocketModalItemPayload payloadWeight={payloadWeight}/>
                     </RocketModalItem>
                 )

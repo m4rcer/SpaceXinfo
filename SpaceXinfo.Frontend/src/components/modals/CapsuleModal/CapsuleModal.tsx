@@ -61,7 +61,7 @@ const CapsuleModal: React.FunctionComponent<ICapsuleModalProps> = ({
             <div className="modal__capsule__missions__title">Missions</div>
             <div className="modal__capsule__missions__content">
                 {capsule.launches.map((launchId) =>
-                    <CapsuleModalMission id={launchId}/>
+                    <CapsuleModalMission launchId={launchId}/>
                 )}
             </div>
         </div>

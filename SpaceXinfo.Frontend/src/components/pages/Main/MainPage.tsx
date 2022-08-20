@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Countdown from 'react-countdown';
 import { Link } from 'react-router-dom';
-import { fetchNextLaunch } from '../../../api/spacexdata/launches';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { AppRoutes } from '../../../routes';
-import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
-import { addBodyClass } from '../../../utils/classes';
+import { addBodyClass, removeBodyClass } from '../../../utils/classes';
 import Button from '../../UI/Button/Button';
 import { ButtonVariants } from '../../UI/Button/ButtonVariants';
 import Container from '../../UI/Container/Container';
@@ -14,20 +14,20 @@ export interface IMainPageProps {};
 
 const MainPage: React.FunctionComponent<IMainPageProps> = props => {
 
-    const [nextLaunch, setNextLaunch] = useState<LaunchType | null>(null);
-
-    async function getNextLaunch() {
-        const nextLaunch = await fetchNextLaunch();
-        setNextLaunch(nextLaunch);
-    }
+    const {nextLaunch} = useTypedSelector(state => state.nextLaunch);
+    const {fetchNextLaunch} = useActions();
 
     useEffect(() => {
         document.title = "SpaceXinfo"
         addBodyClass(bodyClasses.Background);
+
+        return function () {
+            removeBodyClass(bodyClasses.Background);
+        }
     }, [])
 
     useEffect(() => {
-        getNextLaunch();
+        fetchNextLaunch();
     }, [])
 
     return <div className="intro">

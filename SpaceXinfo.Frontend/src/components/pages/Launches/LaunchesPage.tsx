@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { fetchPastLaunches, fetchUpcomingLaunches } from '../../../api/spacexdata/launches';
-import { bodyClasses } from '../../../utils/bodyClasses';
-import { removeBodyClass } from '../../../utils/classes';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import LaunchesList from '../../UI/LaunchesList/LaunchesList';
 import Section from '../../UI/Section/Section';
 
@@ -9,23 +8,19 @@ export interface ILaunchesPageProps {};
 
 const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
 
-    const [upcomingLaunches, setUpcomingLaunches] = useState<any>([]);
-    const [pastLaunches, setPastLaunches] = useState<any>([]);
+    const {pastLaunches} = useTypedSelector(state => state.pastLaunches);
+    const {fetchPastLaunches} = useActions();
+
+    const {upcomingLaunches} = useTypedSelector(state => state.upcomingLaunches);
+    const {fetchUpcomingLaunches} = useActions();
 
     useEffect(() => {
         document.title = "Launches - SpaceXinfo";
-        removeBodyClass(bodyClasses.Background);
     }, []);
 
-    async function getLaunches() {
-        const pastLaunches = await fetchPastLaunches();
-        setPastLaunches(pastLaunches.reverse());
-        const upcomingLaunches = await fetchUpcomingLaunches();
-        setUpcomingLaunches(upcomingLaunches);
-    }
-
     useEffect(() => {
-        getLaunches();
+        fetchPastLaunches();
+        fetchUpcomingLaunches();
     }, []);
 
     return (

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { fetchPayloadById } from '../../../api/spacexdata/payload';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { PayloadType } from '../../../types/Payloads';
 import LaunchModalInfoItem from './LaunchModalInfoItem';
 
@@ -10,16 +11,12 @@ export interface ILaunchModalCoreProps {
 const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
     payloadId
 }) => {
-    const [payload, setPayload] = useState<PayloadType | null>(null);
+    const {payload} = useTypedSelector(state => state.payload);
+    const {fetchPayloadById} = useActions();
     const [isOpen, setIsOpen] = useState(false);
 
-    async function getPayload(id:string){
-        const payload = await fetchPayloadById(id);
-        setPayload(payload);
-    }
-
     useEffect(() => {
-        getPayload(payloadId);
+        fetchPayloadById(payloadId);
     }, [])
 
     return (
@@ -144,11 +141,6 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
             :
             <div></div>
         }
-        <div className="modal__launch__char__specs">
-            <div className="modal__launch__char__specs__item">
-                <i className="fa-solid fa-circle-info"></i> Specs
-            </div>
-        </div>
     </div>)
 }
 export default LaunchModalCore;

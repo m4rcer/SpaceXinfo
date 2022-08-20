@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass, removeBodyClass } from '../../../utils/classes';
-import { dateToString } from '../../../utils/date';
+import { dateToCalendar, dateToString } from '../../../utils/date';
 import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
 
@@ -54,7 +54,10 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
                 <div className="launches__item__icons">
                     <div className="launches__item__icon launches__item__icon--calendar"
                     onClick={e => e.stopPropagation()}>
-                        <i className="fa-solid fa-calendar-days"></i>
+                        <a href={dateToCalendar(launch.date_utc, launch.name)}
+                        target="_blank">
+                            <i className="fa-solid fa-calendar-days"></i>
+                        </a>
                     </div>
                     <div className="launches__item__icon launches__item__icon--favourite"
                     onClick={e => e.stopPropagation()}>

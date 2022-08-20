@@ -11,7 +11,6 @@ import { ButtonVariants } from '../Button/ButtonVariants';
 export interface INavProps {};
 
 const Nav: React.FunctionComponent<INavProps> = props => {
-    const {login, logout} = useActions();
     const [isAuth, setIsAuth] = useState<boolean>(false);
 
 

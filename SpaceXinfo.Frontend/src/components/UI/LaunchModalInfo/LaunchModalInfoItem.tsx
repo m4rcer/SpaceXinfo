@@ -12,7 +12,7 @@ const LaunchModalInfoItem: React.FunctionComponent<ILaunchModalInfoItemProps> = 
     return (
         <div className="modal__launch__char__info__item">
             <div className="modal__launch__char__info__item__col">{title}</div>
-            <div className="modal__launch__char__info__item__col">
+            <div className="modal__launch__char__info__item__col text-right">
                 {children}
             </div>
         </div>

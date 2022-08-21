@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { fetchLaunchById } from '../../../api/spacexdata/launches';
-import { LaunchType } from '../../../types/Launches';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
 
 export interface ICapsuleModalMissionProps {
-    id: string
+    launchId: string
 };
 
 const CapsuleModalMission: React.FunctionComponent<ICapsuleModalMissionProps> = ({
-    id
+    launchId
 }) => {
     
     const [isModalShow, setIsModalShow] = useState(false);
-    const [launch, setLaunch] = useState<LaunchType | null>(null);
-
-    async function getLaunch(id: string) {
-        var launch = await fetchLaunchById(id);
-        setLaunch(launch);
-    }
+    const {launch} = useTypedSelector(state => state.launch);
+    const {fetchLaunchById} = useActions();
 
     useEffect(() => {
-        getLaunch(id);
+        fetchLaunchById(launchId);
     }, []);
 
     function OnClose() {

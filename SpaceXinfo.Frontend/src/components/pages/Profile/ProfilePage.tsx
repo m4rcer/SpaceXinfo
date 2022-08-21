@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AppRoutes } from '../../../routes';
-import { bodyClasses } from '../../../utils/bodyClasses';
-import { removeBodyClass } from '../../../utils/classes';
 import Container from '../../UI/Container/Container';
 
 export interface IProfilePageProps {};
@@ -11,7 +9,6 @@ const ProfilePage: React.FunctionComponent<IProfilePageProps> = props => {
 
     useEffect(() => {
         document.title = "Profile - SpaceXinfo";
-        removeBodyClass(bodyClasses.Background);
     }, []);
 
     return (

@@ -9,8 +9,6 @@ export interface IHeaderProps {};
 
 const Header: React.FunctionComponent<IHeaderProps> = props => {
 
-    const state = useTypedSelector(state => state.launches);
-
     return (
         <header className="header">
             <Container>

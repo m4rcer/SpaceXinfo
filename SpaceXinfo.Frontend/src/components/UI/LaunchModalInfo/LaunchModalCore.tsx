@@ -1,32 +1,41 @@
 import React, { useEffect, useState } from 'react';
-import { fetchCoreById } from '../../../api/spacexdata/cores';
-import { CoreListItemType } from '../../../types/Cores';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import { CoreListItemType, CoreType } from '../../../types/Cores';
+import CoresModal from '../../modals/CoresModal/CoresModal';
+import ModalBase from '../../modals/ModalBase';
 import LaunchModalInfoItem from './LaunchModalInfoItem';
 
 export interface ILaunchModalCoreProps {
-    core: CoreListItemType,
+    coreListItem: CoreListItemType,
 };
 
 const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
-    core
+    coreListItem
 }) => {
-    const [coreSerial, setCoreSerial] = useState("");
+    const {core} = useTypedSelector(state => state.core);
+    const {fetchCoreById} = useActions();
     const [isOpen, setIsOpen] = useState(false);
+    const [isModalShow, setIsModalShow] = useState(false);
 
-    async function getCoreSerial(id:string){
-        const core = await fetchCoreById(id);
-        setCoreSerial(core.serial);
+    function OnClose() {
+        setIsModalShow(false);
+    }
+
+    function OnOpen() {
+        setIsModalShow(true);
     }
 
     useEffect(() => {
-        getCoreSerial(core.core);
+        fetchCoreById(coreListItem.core);
     }, [])
 
     return (
+    <>
     <div className="modal__launch__char__item">
         <div className="modal__launch__char__header">
             <div className="modal__launch__char__header__title">
-                {coreSerial ? coreSerial : "Unknown"}
+                {core ? core.serial : "Unknown"}
             </div>
             <div className="modal__launch__char__header__angle"
             onClick={() => setIsOpen(!isOpen)}>
@@ -39,10 +48,10 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
             isOpen
             ?
             <div className="modal__launch__char__info">
-                <LaunchModalInfoItem title={"Flight"}>{core.flight}</LaunchModalInfoItem>
+                <LaunchModalInfoItem title={"Flight"}>{coreListItem.flight}</LaunchModalInfoItem>
                 <LaunchModalInfoItem title={"Reused"}>
                     {
-                        core.reused
+                        coreListItem.reused
                         ?
                         <i className="fa-solid fa-circle-check"></i>  
                         :
@@ -51,7 +60,7 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
                 </LaunchModalInfoItem>
                 <LaunchModalInfoItem title={"Landing Success"}>
                     {
-                        core.landing_success
+                        coreListItem.landing_success
                         ?
                         <i className="fa-solid fa-circle-check"></i>  
                         :
@@ -60,9 +69,9 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
                 </LaunchModalInfoItem>
                 <LaunchModalInfoItem title={"Landing Type"}>
                     {
-                        core.landing_type
+                        coreListItem.landing_type
                         ?
-                        core.landing_type  
+                        coreListItem.landing_type  
                         :
                         <i className="fa-solid fa-circle-xmark fail"></i>
                     }
@@ -72,10 +81,21 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
             <div></div>
         }
         <div className="modal__launch__char__specs">
-            <div className="modal__launch__char__specs__item">
+            <div className="modal__launch__char__specs__item"
+            onClick={OnOpen}>
                 <i className="fa-solid fa-circle-info"></i> Specs
             </div>
         </div>
-    </div>)
+    </div>
+    <ModalBase isOpen={isModalShow} OnClose={OnClose}>
+        {
+            core
+            ?
+            <CoresModal core={core}/>
+            :
+            <div></div>
+        }
+    </ModalBase>
+    </>);
 }
 export default LaunchModalCore;

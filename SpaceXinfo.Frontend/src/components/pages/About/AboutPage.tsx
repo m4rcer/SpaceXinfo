@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { fetchCompany } from '../../../api/spacexdata/company';
-import { CompanyType } from '../../../types/Company';
-import { bodyClasses } from '../../../utils/bodyClasses';
-import { removeBodyClass } from '../../../utils/classes';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import Container from '../../UI/Container/Container';
 import Section from '../../UI/Section/Section';
 
@@ -10,21 +8,15 @@ export interface IAboutPageProps {};
 
 const AboutPage: React.FunctionComponent<IAboutPageProps> = props => {
 
-    const [company, setCompany] = useState<CompanyType | null>(null);
-
-    async function getCompany() {
-        const company = await fetchCompany();
-        setCompany(company);
-    }
-
+    const {company} = useTypedSelector(state => state.company);
+    const {fetchCompany} = useActions();
 
     useEffect(() => {
         document.title = "About - SpaceXinfo";
-        removeBodyClass(bodyClasses.Background);
     }, []);
 
     useEffect(() => {
-        getCompany();
+        fetchCompany();
     }, []);
 
     return (

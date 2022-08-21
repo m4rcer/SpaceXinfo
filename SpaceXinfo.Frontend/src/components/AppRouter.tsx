@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { privateRoutes, publicRoutes } from '../routes';
-import { getIsAuth } from '../utils/localStorage';
+import { getIsAuth } from '../utils/storage';
 
 export interface IAppRouterProps {};
 

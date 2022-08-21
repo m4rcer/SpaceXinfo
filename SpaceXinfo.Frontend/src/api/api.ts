@@ -96,7 +96,7 @@ export class Client extends ClientBase {
     protected processLaunchPOST(response: Response): Promise<string> {
         const status = response.status;
         let _headers: any = {}; if (response.headers && response.headers.forEach) { response.headers.forEach((v: any, k: any) => _headers[k] = v); };
-        if (status === 201) {
+        if (status === 200) {
             return response.text().then((_responseText) => {
             let result201: any = null;
             result201 = _responseText === "" ? null : JSON.parse(_responseText, this.jsonParseReviver) as string;
@@ -121,7 +121,7 @@ export class Client extends ClientBase {
      * @param id Launch id (guid)
      * @return Success
      */
-    launchGET2(id: string): Promise<LaunchDetailsVm> {
+    launchGETbyId(id: string): Promise<LaunchDetailsVm> {
         let url_ = this.baseUrl + "/api/Launch/{id}";
         if (id === undefined || id === null)
             throw new Error("The parameter 'id' must be defined.");

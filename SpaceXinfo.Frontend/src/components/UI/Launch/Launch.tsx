@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Client, CreateLaunchDto } from '../../../api/api';
 import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass, removeBodyClass } from '../../../utils/classes';
@@ -7,14 +8,26 @@ import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
 
 export interface ILaunchProps {
-    launch: LaunchType
+    launch: LaunchType,
+    isFavourite: boolean,
+    favouriteId?: string
 };
 
+const apiClient = new Client('https://localhost:44382');
+
 const Launch: React.FunctionComponent<ILaunchProps> = ({
-    launch
+    launch,
+    isFavourite,
+    favouriteId
 }) => {
 
     const [isModalShow, setIsModalShow] = useState(false);
+    const [favouriteLaunchId, setFavouriteLaunchId] = useState(favouriteId
+        ? 
+        favouriteId
+        : 
+        "");
+    const [isFavouriteLaunch, setIsFavouriteLaunch] = useState(isFavourite);
 
     function OnClose() {
         setIsModalShow(false);
@@ -24,6 +37,26 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
     function OnOpen() {
         setIsModalShow(true);
         addBodyClass(bodyClasses.NoScroll);
+    }
+
+    async function createFavouriteLaunch(launch: CreateLaunchDto) {
+        setFavouriteLaunchId(await apiClient.launchPOST(launch));
+    }
+
+    async function deleteFavouriteLaunch(id: string) {
+        await apiClient.launchDELETE(id);
+    }
+
+    function OnFavouriteClick() {        
+        if(isFavouriteLaunch) {
+            deleteFavouriteLaunch(favouriteLaunchId);
+        }
+        else {
+            createFavouriteLaunch({
+                favouriteLaunchId: launch.flight_number
+            });
+        }
+        setIsFavouriteLaunch(!isFavouriteLaunch);
     }
 
     return (
@@ -59,8 +92,12 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
                             <i className="fa-solid fa-calendar-days"></i>
                         </a>
                     </div>
-                    <div className="launches__item__icon launches__item__icon--favourite"
-                    onClick={e => e.stopPropagation()}>
+                    <div className={["launches__item__icon launches__item__icon--favourite",
+                    isFavouriteLaunch ? "active" : ""].join(" ")}
+                    onClick={e => {
+                        e.stopPropagation();
+                        OnFavouriteClick()
+                        }}>
                         <i className="fa-solid fa-heart"></i>
                     </div>
                 </div>

@@ -1,26 +1,33 @@
+import { LaunchListVm, LaunchLookupDto } from "../api/api";
 import { CoreListItemType } from "./Cores";
 
 export interface PastLaunchesState {
     pastLaunches: LaunchType[];
-    loading: boolean;
+    pastLaunchesLoading: boolean;
     error: string | null;
 }
 
 export interface UpcomingLaunchesState {
     upcomingLaunches: LaunchType[];
-    loading: boolean;
+    upcomingLaunchesLoading: boolean;
     error: string | null;
 }
 
 export interface NextLaunchState {
     nextLaunch: LaunchType | null;
-    loading: boolean;
+    nextLaunchLoading: boolean;
     error: string | null;
 }
 
 export interface LaunchState {
     launch: LaunchType | null;
-    loading: boolean;
+    launchLoading: boolean;
+    error: string | null;
+}
+
+export interface FavouriteLaunchesState {
+    favouriteLaunches: LaunchLookupDto[];
+    favouriteLaunchesLoading: boolean;
     error: string | null;
 }
 
@@ -48,6 +55,13 @@ export enum LaunchActionTypes {
     FETCH_LAUNCH_BY_ID_ERROR = "FETCH_LAUNCH_BY_ID_ERROR",
 }
 
+export enum FavouriteLaunchesActionTypes {
+    FETCH_FAVOURITE_LAUNCHES = "FETCH_FAVOURITE_LAUNCHES",
+    FETCH_FAVOURITE_LAUNCHES_SUCCESS = "FETCH_FAVOURITE_LAUNCHES_SUCCESS",
+    FETCH_FAVOURITE_LAUNCHES_ERROR = "FETCH_FAVOURITE_LAUNCHES_ERROR",
+}
+
+//#region 
 interface FetchPastLaunchesAction {
     type: PastLaunchesActionTypes.FETCH_PAST_LAUNCHES;
 }
@@ -61,8 +75,9 @@ interface FetchPastLaunchesErrorAction {
     type: PastLaunchesActionTypes.FETCH_PAST_LAUNCHES_ERROR;
     payload: string;
 }
+//#endregion
 
-
+//#region 
 interface FetchUpcomingLaunchesAction {
     type: UpcomingLaunchesActionTypes.FETCH_UPCOMING_LAUNCHES;
 }
@@ -76,8 +91,9 @@ interface FetchUpcomingLaunchesErrorAction {
     type: UpcomingLaunchesActionTypes.FETCH_UPCOMING_LAUNCHES_ERROR;
     payload: string;
 }
+//#endregion
 
-
+//#region 
 interface FetchNextLaunchAction {
     type: NextLaunchActionTypes.FETCH_NEXT_LAUNCH;
 }
@@ -91,8 +107,9 @@ interface FetchNextLaunchErrorAction {
     type: NextLaunchActionTypes.FETCH_NEXT_LAUNCH_ERROR;
     payload: string;
 }
+//#endregion
 
-
+//#region 
 interface FetchLaunchByIdAction {
     type: LaunchActionTypes.FETCH_LAUNCH_BY_ID;
 }
@@ -106,6 +123,23 @@ interface FetchLaunchByIdErrorAction {
     type: LaunchActionTypes.FETCH_LAUNCH_BY_ID_ERROR;
     payload: string;
 }
+//#endregion
+
+//#region 
+interface FetchFavouriteLaunchesAction {
+    type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES;
+}
+
+interface FetchFavouriteLaunchesSuccessAction {
+    type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES_SUCCESS;
+    payload: LaunchLookupDto[];
+}
+
+interface FetchFavouriteLaunchesErrorAction {
+    type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES_ERROR;
+    payload: string;
+}
+//#endregion
 
 export type PastLaunchesAction = FetchPastLaunchesAction | FetchPastLaunchesSuccessAction | FetchPastLaunchesErrorAction;
 
@@ -114,6 +148,8 @@ export type UpcomingLaunchesAction = FetchUpcomingLaunchesAction | FetchUpcoming
 export type NextLaunchAction = FetchNextLaunchAction | FetchNextLaunchSuccessAction | FetchNextLaunchErrorAction;
 
 export type LaunchAction = FetchLaunchByIdAction | FetchLaunchByIdSuccessAction | FetchLaunchByIdErrorAction;
+
+export type FavouriteLaunchesAction = FetchFavouriteLaunchesAction | FetchFavouriteLaunchesSuccessAction | FetchFavouriteLaunchesErrorAction;
 
 export interface LaunchType {
     id: string,

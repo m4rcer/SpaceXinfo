@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Dispatch } from "react";
-import { LaunchAction, LaunchActionTypes, LaunchType, NextLaunchAction, NextLaunchActionTypes, PastLaunchesAction, PastLaunchesActionTypes, UpcomingLaunchesAction, UpcomingLaunchesActionTypes } from "../../types/Launches";
+import { Client } from "../../api/api";
+import { FavouriteLaunchesAction, FavouriteLaunchesActionTypes, LaunchAction, LaunchActionTypes, LaunchType, NextLaunchAction, NextLaunchActionTypes, PastLaunchesAction, PastLaunchesActionTypes, UpcomingLaunchesAction, UpcomingLaunchesActionTypes } from "../../types/Launches";
 
 export const fetchNextLaunch = () => {
     return async (dispatch: Dispatch<NextLaunchAction>) => {
@@ -69,6 +70,24 @@ export const fetchLaunchById = (id: string) => {
             dispatch({
                 type: LaunchActionTypes.FETCH_LAUNCH_BY_ID_ERROR,
                 payload: "An error occurred while loading launch"
+            })
+        }
+    }
+}
+
+export const fetchFavouriteLaunches = (client: Client) => {
+    return async (dispatch: Dispatch<FavouriteLaunchesAction>) => {
+        try {
+            dispatch({type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES});
+            const response = await client.launchesGET();
+            dispatch({
+                type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES_SUCCESS,
+                payload: response.launches ? response.launches : []
+            });
+        } catch (exception) {
+            dispatch({
+                type: FavouriteLaunchesActionTypes.FETCH_FAVOURITE_LAUNCHES_ERROR,
+                payload: "An error occurred while loading launches"
             })
         }
     }

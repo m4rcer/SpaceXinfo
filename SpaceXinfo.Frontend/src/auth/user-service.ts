@@ -1,5 +1,5 @@
 import { UserManager, UserManagerSettings } from 'oidc-client';
-import { setIsAuth } from '../utils/localStorage';
+import { setIsAuth } from '../utils/storage';
 import { setAuthHeader } from './auth-headers';
 
 const userManagerSettings: UserManagerSettings = {
@@ -18,6 +18,7 @@ export async function loadUser() {
     console.log('User: ', user);
     const token = user?.access_token;
     setAuthHeader(token);
+    return user;
 }
 
 export const signinRedirect = () => userManager.signinRedirect();
@@ -36,7 +37,6 @@ export const signoutRedirect = (args?: any) => {
 export const signoutRedirectCallback = () => {
     userManager.clearStaleState();
     userManager.removeUser();
-    setIsAuth(false);
     return userManager.signoutRedirectCallback();
 };
 

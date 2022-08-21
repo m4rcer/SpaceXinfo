@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { capsulesReducer } from "./capsulesReducer";
-import { launchReducer, nextLaunchReducer, pastLaunchesReducer, upcomingLaunchesReducer} from "./launchesReducer";
+import { favouriteLaunchesReducer, launchReducer, nextLaunchReducer, pastLaunchesReducer, upcomingLaunchesReducer} from "./launchesReducer";
 import { launchpadReducer } from "./launchpadsReducer";
 import { payloadReducer } from "./payloadsReducer";
 import { companyReducer } from "./companyReducer";
@@ -20,6 +20,7 @@ export const rootReducer = combineReducers({
     company: companyReducer,
     cores: coresReducer,
     core: coreReducer,
+    favouriteLaunches: favouriteLaunchesReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

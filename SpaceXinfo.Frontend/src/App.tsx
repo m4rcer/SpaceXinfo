@@ -9,6 +9,7 @@ const apiClient = new Client('https://localhost:44382');
 
 
 const App: FC<{}> = (): ReactElement => {
+    loadUser();
 
     return (
         <div className="App">

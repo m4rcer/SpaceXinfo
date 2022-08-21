@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { signinRedirect, signoutRedirect } from '../../../auth/user-service';
-import { useActions } from '../../../hooks/useActions';
-import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import { signinRedirect } from '../../../auth/user-service';
 import { AppRoutes } from '../../../routes';
-import { getIsAuth } from '../../../utils/localStorage';
+import { getIsAuth } from '../../../utils/storage';
 import Button from '../Button/Button';
 import { ButtonVariants } from '../Button/ButtonVariants';
 

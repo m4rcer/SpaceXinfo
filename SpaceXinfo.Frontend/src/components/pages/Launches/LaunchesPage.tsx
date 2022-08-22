@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Client } from '../../../api/api';
 import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import { getIsAuth } from '../../../utils/storage';
 import LaunchesList from '../../UI/LaunchesList/LaunchesList';
 import Section from '../../UI/Section/Section';
 
@@ -10,6 +11,8 @@ export interface ILaunchesPageProps {};
 const apiClient = new Client('https://localhost:44382');
 
 const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
+
+    const [isAuth, setIsAuth] = useState(false);
 
     const {favouriteLaunches, favouriteLaunchesLoading} = useTypedSelector(state => state.favouriteLaunches);
     const {fetchFavouriteLaunches} = useActions();
@@ -22,6 +25,7 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
 
     useEffect(() => {
         document.title = "Launches - SpaceXinfo";
+        setIsAuth(getIsAuth());
     }, []);
 
     useEffect(() => {
@@ -30,16 +34,26 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
         fetchUpcomingLaunches();
     }, []);
 
+
     return (
     <Section title="Launches">
 
-        {
-            !favouriteLaunchesLoading
+        {   !pastLaunchesLoading && !upcomingLaunchesLoading
             ?
-            <LaunchesList pastLaunches={pastLaunches}
-            upcomingLaunches={upcomingLaunches}
-            favouriteLaunches={favouriteLaunches}/>
-            : <h1>Loading...</h1>
+                isAuth 
+                ?
+                    !favouriteLaunchesLoading 
+                    ?
+                    <LaunchesList pastLaunches={pastLaunches}
+                    upcomingLaunches={upcomingLaunches}
+                    favouriteLaunches={favouriteLaunches}/>
+                    : <h1>Loading...</h1>
+                :
+                <LaunchesList pastLaunches={pastLaunches}
+                upcomingLaunches={upcomingLaunches}
+                favouriteLaunches={[]}/>
+            :
+            <h1>Loading...</h1>
         }
         
     </Section>)

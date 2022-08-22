@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Client, CreateLaunchDto } from '../../../api/api';
+import { signinRedirect } from '../../../auth/user-service';
 import { LaunchType } from '../../../types/Launches';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass, removeBodyClass } from '../../../utils/classes';
 import { dateToCalendar, dateToString } from '../../../utils/date';
+import { getIsAuth } from '../../../utils/storage';
 import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
 
@@ -28,6 +30,11 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
         : 
         "");
     const [isFavouriteLaunch, setIsFavouriteLaunch] = useState(isFavourite);
+    const [isAuth, setIsAuth] = useState(false);
+
+    useEffect(() => {
+        setIsAuth(getIsAuth);
+    }, [])
 
     function OnClose() {
         setIsModalShow(false);
@@ -41,13 +48,20 @@ const Launch: React.FunctionComponent<ILaunchProps> = ({
 
     async function createFavouriteLaunch(launch: CreateLaunchDto) {
         setFavouriteLaunchId(await apiClient.launchPOST(launch));
+        console.log(favouriteLaunchId);
     }
 
     async function deleteFavouriteLaunch(id: string) {
         await apiClient.launchDELETE(id);
     }
 
-    function OnFavouriteClick() {        
+    function OnFavouriteClick() { 
+
+        if(!isAuth){
+            signinRedirect();
+            return
+        }
+        
         if(isFavouriteLaunch) {
             deleteFavouriteLaunch(favouriteLaunchId);
         }

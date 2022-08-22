@@ -17,6 +17,9 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
     const {nextLaunch} = useTypedSelector(state => state.nextLaunch);
     const {fetchNextLaunch} = useActions();
 
+    const {company} = useTypedSelector(state => state.company);
+    const {fetchCompany} = useActions();
+
     useEffect(() => {
         document.title = "SpaceXinfo"
         addBodyClass(bodyClasses.Background);
@@ -28,6 +31,7 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
 
     useEffect(() => {
         fetchNextLaunch();
+        fetchCompany();
     }, [])
 
     return <div className="intro">
@@ -36,10 +40,9 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
 
                 <div className="intro__left">
                     <h1 className="intro__title">SpaceX</h1>
-                    <div className="intro__text"><b>SpaceX</b> designs, manufactures and launches 
-                    advanced rockets and spacecraft. The company was founded in <b>2002</b> to 
-                    revolutionize space technology, with the ultimate goal of enabling 
-                    people to live on other planets.</div>
+                    <div className="intro__text">
+                        {company?.summary}
+                    </div>
                     <Link to={AppRoutes.Launches}>
                         <Button variants={[ButtonVariants.Big]}>
                             View Launches

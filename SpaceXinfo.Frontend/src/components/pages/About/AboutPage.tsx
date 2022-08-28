@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import Container from '../../UI/Container/Container';
+import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface IAboutPageProps {};
 
 const AboutPage: React.FunctionComponent<IAboutPageProps> = props => {
 
-    const {company} = useTypedSelector(state => state.company);
+    const {company, companyLoading} = useTypedSelector(state => state.company);
     const {fetchCompany} = useActions();
 
     useEffect(() => {
@@ -21,7 +21,10 @@ const AboutPage: React.FunctionComponent<IAboutPageProps> = props => {
 
     return (
     <Section title="About">
-        <Container>
+
+        {
+            !companyLoading
+            ?
             <div className="about">
                 <div className="about__col">
                     <div className="text-center">
@@ -133,7 +136,10 @@ const AboutPage: React.FunctionComponent<IAboutPageProps> = props => {
                     </div>
                 </div>
             </div>
-        </Container>
+            :
+            <Loader/>
+        }
+        
     </Section>
     )
 }

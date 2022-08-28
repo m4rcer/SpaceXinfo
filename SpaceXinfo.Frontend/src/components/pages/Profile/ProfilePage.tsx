@@ -6,6 +6,7 @@ import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { AppRoutes } from '../../../routes';
 import Container from '../../UI/Container/Container';
 import LaunchesList from '../../UI/LaunchesList/LaunchesList';
+import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface IProfilePageProps {};
@@ -35,23 +36,21 @@ const ProfilePage: React.FunctionComponent<IProfilePageProps> = props => {
 
     return (
     <Section title='My Launches'>
-        <Container>
-            <div className="user__buttons">
-                <Link to={AppRoutes.Signout} className="user__logout">
-                    <i className="fa-solid fa-arrow-right-from-bracket"></i>
-                </Link>
-            </div>
+        <div className="user__buttons">
+            <Link to={AppRoutes.Signout} className="user__logout">
+                <i className="fa-solid fa-arrow-right-from-bracket"></i>
+            </Link>
+        </div>
 
-            {   
-                !pastLaunchesLoading && !upcomingLaunchesLoading && !favouriteLaunchesLoading 
-                ?
-                <LaunchesList pastLaunches={pastLaunches}
-                upcomingLaunches={upcomingLaunches}
-                favouriteLaunches={favouriteLaunches}
-                isProfilePage={true}/>
-                : <h1>Loading...</h1>
-            }
-        </Container>
+        {   
+            !pastLaunchesLoading && !upcomingLaunchesLoading && !favouriteLaunchesLoading 
+            ?
+            <LaunchesList pastLaunches={pastLaunches}
+            upcomingLaunches={upcomingLaunches}
+            favouriteLaunches={favouriteLaunches}
+            isProfilePage={true}/>
+            : <Loader/>
+        }
     </Section>);
 }
 export default ProfilePage;

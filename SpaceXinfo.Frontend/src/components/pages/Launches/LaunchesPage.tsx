@@ -4,6 +4,7 @@ import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { getIsAuth } from '../../../utils/storage';
 import LaunchesList from '../../UI/LaunchesList/LaunchesList';
+import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface ILaunchesPageProps {};
@@ -34,7 +35,6 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
         fetchUpcomingLaunches();
     }, []);
 
-
     return (
     <Section title="Launches">
 
@@ -47,13 +47,13 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
                     <LaunchesList pastLaunches={pastLaunches}
                     upcomingLaunches={upcomingLaunches}
                     favouriteLaunches={favouriteLaunches}/>
-                    : <h1>Loading...</h1>
+                    : <Loader/>
                 :
                 <LaunchesList pastLaunches={pastLaunches}
                 upcomingLaunches={upcomingLaunches}
                 favouriteLaunches={[]}/>
             :
-            <h1>Loading...</h1>
+            <Loader/>
         }
         
     </Section>)

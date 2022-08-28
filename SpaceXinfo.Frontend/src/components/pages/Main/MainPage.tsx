@@ -34,7 +34,8 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
         fetchCompany();
     }, [])
 
-    return <div className="intro">
+    return (
+    <div className="intro">
         <Container>
             <div className="intro__inner">
 
@@ -71,16 +72,6 @@ const MainPage: React.FunctionComponent<IMainPageProps> = props => {
             </div>
 
         </Container>
-    </div>
+    </div>)
 }
 export default MainPage;
-
-{/* <div className="intro__launch__item">
-                            <div className="intro__launch__info__item">CCSFS SLC 40</div>
-                            <div className="intro__launch__info__item">F-NR</div>
-                        </div>
-
-                        <div className="intro__launch__name">
-                            <div className="intro__launch__name__item">{nextLaunch?.name}</div>
-                            <div className="intro__launch__name__item">{nextLaunch?.flight_number}</div>
-                        </div> */}

@@ -1,6 +1,6 @@
 
 export const dateToString = (date: Date) => {
-    return `${date.getDate()}.${date.getMonth()}.${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
+    return `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}`
 };
 
 export const dateToCalendar = (date: string, text: string) => {

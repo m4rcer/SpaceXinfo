@@ -14,11 +14,9 @@ const AcronymsPage: React.FunctionComponent<IAcronymsPageProps> = props => {
 
     return (
     <Section title='Acronyms'>
-        <Container>
-            <AcronymsList general_acronyms={general_acronyms}
-            orbits_acronyms={orbits_acronyms}
-            fules_acronyms={fules_acronyms}/>
-        </Container>
+        <AcronymsList general_acronyms={general_acronyms}
+        orbits_acronyms={orbits_acronyms}
+        fules_acronyms={fules_acronyms}/>
     </Section>
     )
 }

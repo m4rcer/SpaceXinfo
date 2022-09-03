@@ -1,41 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { useActions } from '../../../hooks/useActions';
-import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import { PayloadType } from '../../../types/Payloads';
-import LaunchModalInfoItem from './LaunchModalInfoItem';
+import React, { useEffect} from "react";
+import { ILaunchModalCharProps } from "../../../components/UI/LaunchModalChar/LaunchModalChar";
+import LaunchModalInfoItem from "../../../components/UI/LaunchModalChar/LaunchModalCharItem";
+import { useActions } from "../../../hooks/useActions";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
 
-export interface ILaunchModalCoreProps {
-    payloadId: string
+export interface ILaunchModalPayloadProps {
+    payloadId: string,
 };
 
-const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
-    payloadId
-}) => {
-    const {payload} = useTypedSelector(state => state.payload);
-    const {fetchPayloadById} = useActions();
-    const [isOpen, setIsOpen] = useState(false);
+export function withLaunchModalPayload(Component : React.ComponentType<ILaunchModalCharProps>) {
+    return function (props: ILaunchModalPayloadProps) {
+        
+        const {payloadId} = props;
+        const {payload} = useTypedSelector(state => state.payload);
+        const {fetchPayloadById} = useActions();
 
-    useEffect(() => {
-        fetchPayloadById(payloadId);
-    }, [])
+        useEffect(() => {
+            fetchPayloadById(payloadId);
+        }, []);
 
-    return (
-    <div className="modal__launch__char__item">
-        <div className="modal__launch__char__header">
-            <div className="modal__launch__char__header__title">
-                {payload?.name ? payload?.name : "Unknown"}
-            </div>
-            <div className="modal__launch__char__header__angle"
-            onClick={() => setIsOpen(!isOpen)}>
-                <i className={["fa-solid fa-angle-down",
-                "modal__launch__angle",
-                isOpen ? "modal__launch__angle--up" : ""].join(" ")}></i>
-            </div>
-        </div>
-        {
-            isOpen
-            ?
-            <div className="modal__launch__char__info">
+        return (
+            <Component
+            title={payload ? payload.name : "Unknown"}>
+                
                 <LaunchModalInfoItem title={"Customers"}>{payload?.customers}</LaunchModalInfoItem>
                 <LaunchModalInfoItem title={"Reused"}>
                     {
@@ -137,10 +124,8 @@ const LaunchModalCore: React.FunctionComponent<ILaunchModalCoreProps> = ({
                         }years`
                     }
                 </LaunchModalInfoItem>
-            </div>
-            :
-            <div></div>
-        }
-    </div>)
+
+            </Component>
+        );
+    }
 }
-export default LaunchModalCore;

@@ -2,24 +2,24 @@ import { RocketAction, RocketActionTypes, RocketsAction, RocketsActionTypes, Roc
 
 const rocketsInitialState: RocketsState = {
     rockets: [],
-    loading: false,
+    rocketsLoading: false,
     error: null,
 }
 
 const rocketInitialState: RocketState = {
     rocket: null,
-    loading: false,
+    rocketLoading: false,
     error: null,
 }
 
 export const rocketsReducer = (state = rocketsInitialState, action: RocketsAction): RocketsState => {
     switch (action.type) {
         case RocketsActionTypes.FETCH_ROCKETS:
-            return {loading: true, error: null, rockets: []};
+            return {rocketsLoading: true, error: null, rockets: []};
         case RocketsActionTypes.FETCH_ROCKETS_SUCCESS:
-            return {loading: false, error: null, rockets: action.payload};
+            return {rocketsLoading: false, error: null, rockets: action.payload};
         case RocketsActionTypes.FETCH_ROCKETS_ERROR:
-            return {loading: false, error: action.payload, rockets: []};    
+            return {rocketsLoading: false, error: action.payload, rockets: []};    
         default:
             return state;
     }
@@ -28,11 +28,11 @@ export const rocketsReducer = (state = rocketsInitialState, action: RocketsActio
 export const rocketReducer = (state = rocketInitialState, action: RocketAction): RocketState => {
     switch (action.type) {
         case RocketActionTypes.FETCH_ROCKET_BY_ID:
-            return {loading: true, error: null, rocket: null};
+            return {rocketLoading: true, error: null, rocket: null};
         case RocketActionTypes.FETCH_ROCKET_BY_ID_SUCCESS:
-            return {loading: false, error: null, rocket: action.payload};
+            return {rocketLoading: false, error: null, rocket: action.payload};
         case RocketActionTypes.FETCH_ROCKET_BY_ID_ERROR:
-            return {loading: false, error: action.payload, rocket: null};    
+            return {rocketLoading: false, error: action.payload, rocket: null};    
         default:
             return state;
     }

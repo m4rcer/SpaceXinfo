@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 
-export interface ILaunchModalInfoItemProps {
+export interface ILaunchModalCharItemProps {
     title: string,
     children: ReactNode
 };
 
-const LaunchModalInfoItem: React.FunctionComponent<ILaunchModalInfoItemProps> = ({
+const LaunchModalCharItem: React.FunctionComponent<ILaunchModalCharItemProps> = ({
     title,
     children
 }) => {
@@ -18,4 +18,4 @@ const LaunchModalInfoItem: React.FunctionComponent<ILaunchModalInfoItemProps> = 
         </div>
     )
 }
-export default LaunchModalInfoItem;
+export default LaunchModalCharItem;

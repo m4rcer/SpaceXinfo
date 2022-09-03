@@ -1,12 +1,12 @@
 export interface RocketsState {
     rockets: RocketType[];
-    loading: boolean;
+    rocketsLoading: boolean;
     error: string | null;
 }
 
 export interface RocketState {
     rocket: RocketType | null;
-    loading: boolean;
+    rocketLoading: boolean;
     error: string | null;
 }
 

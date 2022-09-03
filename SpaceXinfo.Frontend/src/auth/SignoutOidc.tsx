@@ -7,8 +7,8 @@ const SignoutOidc: FC<{}> = () => {
     useEffect(() => {
         const signoutAsync = async () => {
             await signoutRedirectCallback();
-            history('/');
             window.location.reload();
+            history('/');
         };
         signoutAsync();
     }, [history]);

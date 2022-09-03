@@ -9,7 +9,7 @@ export const fetchCapsules = () => {
             const response = await axios.get<CapsuleType[]>(`https://api.spacexdata.com/latest/capsules`);
             dispatch({
                 type: CapsulesActionTypes.FETCH_CAPSULES_SUCCESS,
-                payload: response.data
+                payload: response.data.reverse()
             });
         } catch (exception) {
             dispatch({

@@ -1,11 +1,11 @@
-import React, { FC, useEffect, useRef } from 'react';
+import React, { FC, ReactNode, useEffect, useRef } from 'react';
 import { User, UserManager } from 'oidc-client';
 import { setAuthHeader } from './auth-headers';
 import { setIsAuth } from '../utils/storage';
 
 type AuthProviderProps = {
     userManager: UserManager;
-    children: any
+    children: ReactNode
 };
 
 const AuthProvider: FC<AuthProviderProps> = ({

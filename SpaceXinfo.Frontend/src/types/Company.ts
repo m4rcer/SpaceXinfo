@@ -1,6 +1,6 @@
 export interface CompanyState {
     company: CompanyType | null;
-    loading: boolean;
+    companyLoading: boolean;
     error: string | null;
 }
 

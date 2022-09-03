@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useActions } from '../../../hooks/useActions';
+import { useModal } from '../../../hooks/useModal';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import LaunchModal from '../../modals/LaunchModal/LaunchModal';
 import ModalBase from '../../modals/ModalBase';
@@ -12,28 +13,21 @@ const CapsuleModalMission: React.FunctionComponent<ICapsuleModalMissionProps> = 
     launchId
 }) => {
     
-    const [isModalShow, setIsModalShow] = useState(false);
     const {launch} = useTypedSelector(state => state.launch);
     const {fetchLaunchById} = useActions();
+    const {isModalShow, OnModalOpen, OnModalClose} = useModal();
 
     useEffect(() => {
         fetchLaunchById(launchId);
     }, []);
-
-    function OnClose() {
-        setIsModalShow(false);
-    }
-
-    function OnOpen() {
-        setIsModalShow(true);
-    }
     
     return (
     <>
-    <div className="modal__capsule__missions__item" onClick={OnOpen}>
+    <div className="modal__capsule__missions__item" onClick={OnModalOpen}>
         {launch?.flight_number} - Mission Details <i className="fa-solid fa-arrow-right"></i>
     </div>
-    <ModalBase isOpen={isModalShow} OnClose={OnClose}>
+    
+    <ModalBase isOpen={isModalShow} OnClose={OnModalClose}>
         {
         launch
         ?

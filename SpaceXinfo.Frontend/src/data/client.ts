@@ -1,0 +1,1 @@
+export const CLIENT = "https://localhost:44382";

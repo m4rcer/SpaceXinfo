@@ -4,13 +4,14 @@ import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { CoreType } from '../../../types/Cores';
 import Container from '../../UI/Container/Container';
 import CoresList from '../../UI/CoresList/CoresList';
+import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface ICoresPageProps {};
 
 const CoresPage: React.FunctionComponent<ICoresPageProps> = props => {
 
-    const {cores} = useTypedSelector(state => state.cores);
+    const {cores, coresLoading} = useTypedSelector(state => state.cores);
     const {fetchCores} = useActions();
 
     useEffect(() => {
@@ -23,9 +24,15 @@ const CoresPage: React.FunctionComponent<ICoresPageProps> = props => {
 
     return (
         <Section title='Cores'>
-            <Container>
+
+            {
+                !coresLoading 
+                ?
                 <CoresList cores={cores}/>
-            </Container>
+                :
+                <Loader/>
+            }
+
         </Section>
     );
 }

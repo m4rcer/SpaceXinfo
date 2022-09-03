@@ -1,6 +1,6 @@
 export interface CapsulesState {
     capsules: CapsuleType[];
-    loading: boolean;
+    capsulesLoading: boolean;
     error: string | null;
 }
 

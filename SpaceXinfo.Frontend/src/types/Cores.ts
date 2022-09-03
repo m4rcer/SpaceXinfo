@@ -1,12 +1,12 @@
 export interface CoresState {
     cores: CoreType[];
-    loading: boolean;
+    coresLoading: boolean;
     error: string | null;
 }
 
 export interface CoreState {
     core: CoreType | null;
-    loading: boolean;
+    coreLoading: boolean;
     error: string | null;
 }
 

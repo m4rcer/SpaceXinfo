@@ -1,104 +1,141 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+﻿html {
+    font-size: 15px;
+    height: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-}
-
-input {
-    height: 45px;
-    width: 100%;
-    color: #222121;
-    font-size: 14px;
-    line-height: 16px;
-    border: 2px solid #E9F2FF;
-    border-radius: 5px;
-    padding-left: 25px;
-}
-
-    input:focus {
-        outline: none;
-        border: 2px solid #C1D9FD;
-    }
-
-    input:not(:focus):invalid {
-        border-color: #C1D9FD;
-    }
-
-main {
-    background: #222326;
-    height: 100vh;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
-.circle {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 0.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.register {
+    margin: 5rem 0;
+}
+
+.register__inner {
+    margin: 0 auto;
+    position: relative;
+}
+
+.register__label {
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.register__input {
+    margin: 0.7rem 0 1.5rem;
+    height: 4rem;
+    width: 100%;
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 16px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 25px;
+    font-family: inherit;
+}
+
+.register__input::placeholder {
+    font-family: inherit;
+}
+
+.register__input:focus {
+    outline: none;
+    border: none;
+}
+
+.register__circle {
     position: absolute;
-    z-index: 1;
-    width: 2534px;
-    height: 2534px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%;
-    background: #1b1b1b;
-    box-shadow: 0px 4px 70px 6px rgba(77, 79, 81, 0.4);
+    background: #222222;
+    box-shadow: 0px 0px 20px 11px rgba(0, 0, 0, 0.25);
     animation-name: fadeCircle;
-    animation-duration: .7s;
+    animation-duration: .4s;
     animation-timing-function: ease-in-out;
     animation-delay: .3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeCircle {
-    0% {
-        width: 2534px;
-        height: 2534px;
-    }
-
-    25% {
-        width: 2000px;
-        height: 2000px;
-    }
-
-    50% {
-        width: 1500px;
-        height: 1500px;
-    }
-
-    75% {
-        width: 1000px;
-        height: 1000px;
-    }
-
-    100% {
-        width: 534px;
-        height: 534px;
-    }
-}
-
-.register-form-container {
+.register__form__container {
+    margin: 0 auto;
     opacity: 0;
     position: relative;
     z-index: 2;
-    max-width: 415px;
+    max-width: 460px;
     width: 100%;
-    background: #1f1f1f;
+    background: #474747;
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 38px;
     padding-bottom: 38px;
     animation-name: fadeForm;
-    animation-duration: .7s;
+    animation-duration: .4s;
     animation-timing-function: ease-in-out;
     animation-delay: 1.4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    border: solid rgba(255, 255, 255, 0.1) 1px;
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.24);
+}
+
+.register__form__title {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.register__divider {
+    font-size: 1.4rem;
+    line-height: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin: 1.5rem 0 1.8rem;
+}
+
+.register__form__buttons {
+    margin-top: 1rem;
 }
 
 @keyframes fadeForm {
@@ -123,59 +160,53 @@ main {
     }
 }
 
-.form-title {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 38px;
-    text-align: center;
+@keyframes fadeCircle {
+    0% {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    100% {
+        width: 634px;
+        height: 634px;
+    }
 }
 
-.form-field {
-    margin-bottom: 13px;
-}
-
-.button {
-    width: 100%;
-    font-weight: bold;
-    font-size: 14px;
+.btn {
     display: block;
-    height: 45px;
-    background: #1a5dbb;
-    border-radius: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 45px;
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
-    border: none;
-}
-
-    .button:hover {
-        background-color: #0D6CF2;
-    }
-
-a.button {
     text-decoration: none;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 0.8rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: color .3s linear, background .3s linear;
+    color: #fff;
 }
 
-.button-bottom {
-    color: #1f1f1f;
-    background: #F2F6FF;
+.btn:hover {
+    background-color: #fff;
+    color: #333;
 }
 
-    .button-bottom:hover {
-        background: #E2E6F0;
-        color: #454545;
-    }
+.btn--big {
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+}
 
-.divider {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 14px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.btn--long {
+    min-width: 300px;
+}
+
+.btn--register {
+    margin-left: 0.8rem;
 }

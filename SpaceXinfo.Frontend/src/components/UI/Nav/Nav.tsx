@@ -11,7 +11,6 @@ export interface INavProps {};
 const Nav: React.FunctionComponent<INavProps> = props => {
     const [isAuth, setIsAuth] = useState<boolean>(false);
 
-
     useEffect(() => {
         setIsAuth(getIsAuth());
     }, []);
@@ -23,9 +22,12 @@ const Nav: React.FunctionComponent<INavProps> = props => {
             <Link to={AppRoutes.Cores} className="nav__link">Cores</Link>
             <Link to={AppRoutes.Acronyms} className="nav__link">Acronyms</Link>
             <Link to={AppRoutes.About} className="nav__link">About</Link>
-            {!isAuth ? <Button variants={[ButtonVariants.Register]}
+            {!isAuth 
+            ? 
+            <Button variants={[ButtonVariants.Register]}
             OnClick={() => signinRedirect()}>Login</Button>
-            : <Link to={AppRoutes.Profile} className="nav__link nav__link--profile">Profile</Link>}
+            : 
+            <Link to={AppRoutes.Profile} className="nav__link nav__link--profile">Profile</Link>}
         </nav>
         )
 }

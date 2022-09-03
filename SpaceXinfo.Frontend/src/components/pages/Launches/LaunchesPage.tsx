@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Client } from '../../../api/api';
+import { CLIENT } from '../../../data/client';
 import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import LaunchesList from '../../UI/LaunchesList/LaunchesList';
+import { AllLaunchesList } from '../../UI/LaunchesList/LaunchesList';
+import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface ILaunchesPageProps {};
 
-const apiClient = new Client('https://localhost:44382');
+const apiClient = new Client(CLIENT);
 
 const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
 
@@ -34,12 +36,13 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
     <Section title="Launches">
 
         {
-            !favouriteLaunchesLoading
+            !favouriteLaunchesLoading && !pastLaunchesLoading && !upcomingLaunchesLoading
             ?
-            <LaunchesList pastLaunches={pastLaunches}
+            <AllLaunchesList pastLaunches={pastLaunches}
             upcomingLaunches={upcomingLaunches}
             favouriteLaunches={favouriteLaunches}/>
-            : <h1>Loading...</h1>
+            :
+            <Loader/>
         }
         
     </Section>)

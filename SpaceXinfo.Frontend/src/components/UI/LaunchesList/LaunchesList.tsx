@@ -1,37 +1,41 @@
-import React from 'react';
-import { LaunchListVm, LaunchLookupDto } from '../../../api/api';
+import React, { Component } from 'react';
+import { LaunchLookupDto } from '../../../api/api';
+import { IAllLaunchesColumnProps } from '../../../hocs/UI/LaunchesColumn/withAllLaunchesColumn';
+import { IFavLaunchesColumnProps } from '../../../hocs/UI/LaunchesColumn/withFavLaunchesColumn';
+import { withAllLaunchesList } from '../../../hocs/UI/LaunchesList/withAllLaunchesList';
+import { withFavLaunchesList } from '../../../hocs/UI/LaunchesList/withFavLaunchesList';
 import { LaunchType } from '../../../types/Launches';
-import LaunchesColumn from '../LaunchesColumn/LaunchesColumn';
 
 export interface ILaunchesListProps {
     upcomingLaunches: LaunchType[],
     pastLaunches: LaunchType[],
     favouriteLaunches: LaunchLookupDto[],
-    isProfilePage?: boolean
+    Component: React.ComponentType<IAllLaunchesColumnProps | IFavLaunchesColumnProps>
 };
 
 const LaunchesList: React.FunctionComponent<ILaunchesListProps> = ({
     upcomingLaunches,
     pastLaunches,
     favouriteLaunches,
-    isProfilePage
+    Component
 }) => {
+    
     return ( 
     <div className="launches">
-        <LaunchesColumn favouriteLaunches={favouriteLaunches} 
+        <Component favouriteLaunches={favouriteLaunches} 
         launches={upcomingLaunches} 
-        isTextRight={true}
-        isProfilePage={isProfilePage}>
+        isTextRight={true}>
             <i className="fa-regular fa-clock"></i> Upcoming
-        </LaunchesColumn>
+        </Component>
 
         <div className="launches__divider"></div>
 
-        <LaunchesColumn favouriteLaunches={favouriteLaunches} 
-        launches={pastLaunches}
-        isProfilePage={isProfilePage}>
-        <i className="fa-regular fa-circle-check"></i> Completed
-        </LaunchesColumn>
+        <Component favouriteLaunches={favouriteLaunches} 
+        launches={pastLaunches}>
+            <i className="fa-regular fa-circle-check"></i> Completed
+        </Component>
     </div>)
 }
-export default LaunchesList;
+
+export const AllLaunchesList = withAllLaunchesList(LaunchesList);
+export const FavLaunchesList = withFavLaunchesList(LaunchesList);

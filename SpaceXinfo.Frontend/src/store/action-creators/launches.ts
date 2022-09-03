@@ -3,6 +3,13 @@ import { Dispatch } from "react";
 import { Client } from "../../api/api";
 import { FavouriteLaunchesAction, FavouriteLaunchesActionTypes, LaunchAction, LaunchActionTypes, LaunchType, NextLaunchAction, NextLaunchActionTypes, PastLaunchesAction, PastLaunchesActionTypes, UpcomingLaunchesAction, UpcomingLaunchesActionTypes } from "../../types/Launches";
 
+declare module 'axios' {   
+    export interface AxiosRequestConfig {
+        query?: any;
+        options?: any;   
+    } 
+}
+
 export const fetchNextLaunch = () => {
     return async (dispatch: Dispatch<NextLaunchAction>) => {
         try {
@@ -25,7 +32,7 @@ export const fetchPastLaunches = () => {
     return async (dispatch: Dispatch<PastLaunchesAction>) => {
         try {
             dispatch({type: PastLaunchesActionTypes.FETCH_PAST_LAUNCHES});
-            const response = await axios.get<LaunchType[]>(`https://api.spacexdata.com/latest/launches/past`);
+            const response = await axios.get<LaunchType[]>(`https://api.spacexdata.com/v5/launches/past`);
             dispatch({
                 type: PastLaunchesActionTypes.FETCH_PAST_LAUNCHES_SUCCESS,
                 payload: response.data.reverse()

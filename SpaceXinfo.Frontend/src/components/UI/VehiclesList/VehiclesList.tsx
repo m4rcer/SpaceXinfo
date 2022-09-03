@@ -1,9 +1,8 @@
 import React from 'react';
 import { CapsuleType } from '../../../types/Capsules';
 import { RocketType } from '../../../types/Rockets';
-import Capsule from '../VehiclesItems/Capsule';
-import Rocket from '../VehiclesItems/Rocket';
 import VehiclesColumn from '../VehiclesColumn/VehiclesColumn';
+import { Capsule, Rocket } from '../VehiclesItem/VehiclesItem';
 
 export interface IVehiclesListProps {
     rockets: RocketType[],

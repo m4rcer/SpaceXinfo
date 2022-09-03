@@ -4,9 +4,10 @@ export const dateToString = (date: Date) => {
 };
 
 export const dateToCalendar = (date: string, text: string) => {
+    date = date.replaceAll("-", "").replaceAll(".", "").replaceAll(":","");
     return `https://calendar.google.com/calendar/u/0/r/eventedit?dates=${
-        date.replaceAll("-", "").replaceAll(".", "").replaceAll(":","")
+        date
         }/${
-        date.replaceAll("-", "").replaceAll(".", "").replaceAll(":","")
+        date
         }&text=${text.split(" ").join("+")}`
 };

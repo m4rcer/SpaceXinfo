@@ -10,20 +10,17 @@ export interface IBasePageProps {};
 
 const BasePage: React.FunctionComponent<IBasePageProps> = props => {
     return (
-        <>
-          <BrowserRouter>
-            <div className="wrapper">
-              <Header/>
+        <BrowserRouter>
+          <div className="wrapper">
+            <Header/>
 
-              <main className="main">
-                <AppRouter/>
-              </main>
+            <main className="main">
+              <AppRouter/>
+            </main>
 
-              <Footer/>
-            </div>
-          </BrowserRouter>
-
-        </>
+            <Footer/>
+          </div>
+        </BrowserRouter>
     )
 }
 export default BasePage;

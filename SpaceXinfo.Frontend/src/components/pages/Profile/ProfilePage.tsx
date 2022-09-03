@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Client } from '../../../api/api';
+import { CLIENT } from '../../../data/client';
 import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { AppRoutes } from '../../../routes';
-import Container from '../../UI/Container/Container';
-import LaunchesList from '../../UI/LaunchesList/LaunchesList';
+import { FavLaunchesList } from '../../UI/LaunchesList/LaunchesList';
 import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface IProfilePageProps {};
 
-const apiClient = new Client('https://localhost:44382');
+const apiClient = new Client(CLIENT);
 
 const ProfilePage: React.FunctionComponent<IProfilePageProps> = props => {
 
@@ -45,10 +45,9 @@ const ProfilePage: React.FunctionComponent<IProfilePageProps> = props => {
         {   
             !pastLaunchesLoading && !upcomingLaunchesLoading && !favouriteLaunchesLoading 
             ?
-            <LaunchesList pastLaunches={pastLaunches}
+            <FavLaunchesList pastLaunches={pastLaunches}
             upcomingLaunches={upcomingLaunches}
-            favouriteLaunches={favouriteLaunches}
-            isProfilePage={true}/>
+            favouriteLaunches={favouriteLaunches}/>
             : <Loader/>
         }
     </Section>);

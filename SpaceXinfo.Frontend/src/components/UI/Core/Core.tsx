@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useModal } from '../../../hooks/useModal';
 import { CoreType } from '../../../types/Cores';
 import { bodyClasses } from '../../../utils/bodyClasses';
 import { addBodyClass, removeBodyClass } from '../../../utils/classes';
@@ -13,21 +14,11 @@ const Core: React.FunctionComponent<ICoreProps> = ({
     core
 }) => {
 
-    const [isModalShow, setIsModalShow] = useState(false);
-
-    function OnClose() {
-        setIsModalShow(false);
-        removeBodyClass(bodyClasses.NoScroll);
-    }
-
-    function OnOpen() {
-        setIsModalShow(true);
-        addBodyClass(bodyClasses.NoScroll);
-    }
+    const {isModalShow, OnModalOpen, OnModalClose} = useModal();
 
     return (
     <>
-    <div className="cores__item" onClick={OnOpen}>
+    <div className="cores__item" onClick={OnModalOpen}>
         <div>
             <div className="cores__item__header">
                 <div className="cores__name">{core.serial}</div>
@@ -66,7 +57,7 @@ const Core: React.FunctionComponent<ICoreProps> = ({
             </div>
         </div>
     </div>
-    <ModalBase isOpen={isModalShow} OnClose={OnClose}>
+    <ModalBase isOpen={isModalShow} OnClose={OnModalClose}>
         <CoresModal core={core}/>
     </ModalBase>
     </>

@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Client } from '../../../api/api';
+import { CLIENT } from '../../../data/client';
 import { useActions } from '../../../hooks/useActions';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import { getIsAuth } from '../../../utils/storage';
-import LaunchesList from '../../UI/LaunchesList/LaunchesList';
+import { AllLaunchesList } from '../../UI/LaunchesList/LaunchesList';
 import Loader from '../../UI/Loader/Loader';
 import Section from '../../UI/Section/Section';
 
 export interface ILaunchesPageProps {};
 
-const apiClient = new Client('https://localhost:44382');
+const apiClient = new Client(CLIENT);
 
 const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
-
-    const [isAuth, setIsAuth] = useState(false);
 
     const {favouriteLaunches, favouriteLaunchesLoading} = useTypedSelector(state => state.favouriteLaunches);
     const {fetchFavouriteLaunches} = useActions();
@@ -26,7 +24,6 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
 
     useEffect(() => {
         document.title = "Launches - SpaceXinfo";
-        setIsAuth(getIsAuth());
     }, []);
 
     useEffect(() => {
@@ -38,20 +35,12 @@ const LaunchesPage: React.FunctionComponent<ILaunchesPageProps> = props => {
     return (
     <Section title="Launches">
 
-        {   !pastLaunchesLoading && !upcomingLaunchesLoading
+        {
+            !favouriteLaunchesLoading && !pastLaunchesLoading && !upcomingLaunchesLoading
             ?
-                isAuth 
-                ?
-                    !favouriteLaunchesLoading 
-                    ?
-                    <LaunchesList pastLaunches={pastLaunches}
-                    upcomingLaunches={upcomingLaunches}
-                    favouriteLaunches={favouriteLaunches}/>
-                    : <Loader/>
-                :
-                <LaunchesList pastLaunches={pastLaunches}
-                upcomingLaunches={upcomingLaunches}
-                favouriteLaunches={[]}/>
+            <AllLaunchesList pastLaunches={pastLaunches}
+            upcomingLaunches={upcomingLaunches}
+            favouriteLaunches={favouriteLaunches}/>
             :
             <Loader/>
         }

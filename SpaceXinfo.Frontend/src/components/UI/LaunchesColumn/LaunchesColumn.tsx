@@ -1,29 +1,19 @@
 import React, { ReactNode } from 'react';
 import { LaunchLookupDto } from '../../../api/api';
-import { LaunchType } from '../../../types/Launches';
-import Launch from '../Launch/Launch';
+import { withAllLaunchesColumn } from '../../../hocs/UI/LaunchesColumn/withAllLaunchesColumn';
+import { withFavLaunchesColumn } from '../../../hocs/UI/LaunchesColumn/withFavLaunchesColumn';
 
 export interface ILaunchesColumnProps {
     children: ReactNode,
-    launches: LaunchType[],
-    favouriteLaunches: LaunchLookupDto[],
-    isTextRight?: boolean,
-    isProfilePage?: boolean
+    launches: ReactNode,
+    isTextRight?: boolean
 };
 
 const LaunchesColumn: React.FunctionComponent<ILaunchesColumnProps> = ({
     children,
     launches,
     isTextRight,
-    favouriteLaunches,
-    isProfilePage
 }) => {
-
-    const favouriteLaunchesIds = favouriteLaunches.map(
-        (launch) => {
-            return launch.favouriteLaunchId
-        }
-    );
 
     return (
         <div className={
@@ -32,37 +22,11 @@ const LaunchesColumn: React.FunctionComponent<ILaunchesColumnProps> = ({
                 {children}
             </div>
 
-            {
-            !isProfilePage
-            ?
             <div className="launches__list">
-                {
-                    launches.map((launch) => {
-                        const index = favouriteLaunchesIds?.findIndex(id => id === launch.flight_number);
-                        return <Launch key={launch.id} launch={launch}
-                        isFavourite={index >= 0}
-                        favouriteId={favouriteLaunches.at(index)?.id}
-                        />
-                    })
-                }
+                {launches}
             </div>
-            :
-            <div className="launches__list">
-                {
-                    launches.map((launch) => {
-                        const index = favouriteLaunchesIds?.findIndex(id => id === launch.flight_number);
-                        if(index >= 0) {
-                            return <Launch key={launch.id} launch={launch}
-                            isFavourite={true}
-                            favouriteId={favouriteLaunches.at(index)?.id}
-                        />
-                        }
-                        return
-                    })
-                }
-            </div>
-            }
         </div>
     )
 }
-export default LaunchesColumn;
+export const AllLaunchesColumn = withAllLaunchesColumn(LaunchesColumn);
+export const FavLaunchesColumn = withFavLaunchesColumn(LaunchesColumn);

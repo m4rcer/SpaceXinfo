@@ -5,7 +5,7 @@ import RocketModalItemMetrics from '../../UI/RocketModalItem/RocketModalItemMetr
 import RocketModalItemPayload from '../../UI/RocketModalItem/RocketModalItemPayload';
 
 export interface IRocketModalProps {
-    rocket: RocketType
+    rocket: RocketType | null
 };
 
 const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
@@ -14,16 +14,16 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
     return (
     <div className="modal__rocket">
         <div className="modal__rocket__photo">
-            <img src={rocket.flickr_images[0]} alt=""/>
-            <div className="modal__rocket__photo__title">{rocket.name}</div>
+            <img src={rocket?.flickr_images[0]} alt=""/>
+            <div className="modal__rocket__photo__title">{rocket?.name}</div>
         </div>
 
         <div className="modal__rocket__header">
             <div className="modal__rocket__header__item">
                 <div className="modal__rocket__header__info">Type</div>
-                <div className="modal__rocket__header__title">{rocket.name}</div>
+                <div className="modal__rocket__header__title">{rocket?.name}</div>
                 <div className="modal__rocket__header__date">
-                    {rocket.first_flight.replaceAll("-", ".")}
+                    {rocket?.first_flight.replaceAll("-", ".")}
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
                 <div className="modal__rocket__header__info">Active</div>
                 <div className="modal__rocket__header__title">
                     {
-                        rocket.active
+                        rocket?.active
                         ?
                         <i className="fa-solid fa-circle-check"></i>
                         :
@@ -43,7 +43,7 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
         </div>
 
         <div className="modal__rocket__text">
-            {rocket.description}
+            {rocket?.description}
         </div>
 
         <div className="modal__rocket__info">
@@ -55,14 +55,15 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
             </div>
             <div className="modal__rocket__info__col 
             modal__rocket__info__col--right">
-                <div className="modal__rocket__info__item">{rocket.company}</div>
+                <div className="modal__rocket__info__item">{rocket?.company}</div>
                 <div className="modal__rocket__info__item">United States</div>
                 <div className="modal__rocket__info__item">$ 
-                {Intl.NumberFormat('en-US').format(
-                    rocket.cost_per_launch
+                {
+                    Intl.NumberFormat('en-US').format(
+                        rocket?.cost_per_launch ? rocket.cost_per_launch : 0
                 )}
                 </div>
-                <div className="modal__rocket__info__item">{rocket.success_rate_pct}%</div>
+                <div className="modal__rocket__info__item">{rocket?.success_rate_pct}%</div>
             </div>
         </div>
 
@@ -72,7 +73,7 @@ const RocketModal: React.FunctionComponent<IRocketModalProps> = ({
             </RocketModalItem>
 
             {
-                rocket.payload_weights.map((payloadWeight) =>
+                rocket?.payload_weights.map((payloadWeight) =>
                     <RocketModalItem key={payloadWeight.id} title={payloadWeight.id.toUpperCase()}>
                         <RocketModalItemPayload payloadWeight={payloadWeight}/>
                     </RocketModalItem>
